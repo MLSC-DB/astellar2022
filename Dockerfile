@@ -1,25 +1,12 @@
-FROM node:15.4 as build 
-
-
-WORKDIR /react-app
-
-
-COPY package*.json .
-
-
+FROM node:15.4 as build-deps 
+WORKDIR /usr/src/app
+COPY package.json package-lock.json ./
 RUN npm install
-
-
-COPY . .
-
-
+COPY . ./
 RUN npm run build
 
-
-FROM nginx:1.19
-
-
-COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-
-
-COPY --from=build /react-app/build /usr/share/nginx/html
+# Stage 2 - the production environment
+FROM nginx:1.12-alpine
+COPY --from=build-deps /usr/src/app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
