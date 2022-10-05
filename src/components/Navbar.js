@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import '../App.css';
+import "../App.css";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -51,7 +51,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="#about"
+                to="/about"
                 onClick={() => updateExpanded(false)}
               >
                 About
@@ -64,10 +64,19 @@ function NavBar() {
                 to="/play"
                 onClick={() => updateExpanded(false)}
               >
-                Play
+                Leaderboard
               </Nav.Link>
             </Nav.Item>
 
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/play"
+                onClick={() => updateExpanded(false)}
+              >
+                Play
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 as={Link}

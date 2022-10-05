@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About/About"
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
@@ -41,7 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
