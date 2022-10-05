@@ -39,5 +39,5 @@ jobs:
           HOST: ${{ secrets.HOST }}
           KEY: ${{ secrets.SSHKEY }}
       with:
-          source: './*'
+          source: './build/'
           target: '/home/shourde/hosted-projects/astellar2022' 
