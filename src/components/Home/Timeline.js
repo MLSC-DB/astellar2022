@@ -5,13 +5,13 @@ import TimelineItem from "./TimelineItem";
 const timelineData = [
   {
     text: "Astellar : The Cryptic Hunt",
-    date: "Oct 15-17 2022",
+    date: "Oct 15-16 2022",
     category: {
       tag: "Online",
       color: "#018f69",
     },
     link: {
-      url: "https://google.com/",
+      url: "https://astellar.xyz/",
       text: "Details",
     },
   },
@@ -22,10 +22,10 @@ const timelineData = [
       tag: "Offline",
       color: "#018f69",
     },
-    link: {
-      url: "https://google.com",
-      text: "Details",
-    },
+    // link: {
+    //   url: "https://google.com",
+    //   text: "Details",
+    // },
   },
   {
     text: "G'Game : LAN and Console Gaming Event",
@@ -34,10 +34,10 @@ const timelineData = [
       tag: "Offline",
       color: "#018f69",
     },
-    link: {
-      url: "https://google.com",
-      text: "Details",
-    },
+    // link: {
+    //   url: "https://google.com",
+    //   text: "Details",
+    // },
   },
 ];
 
