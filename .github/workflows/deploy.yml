@@ -30,20 +30,14 @@ jobs:
         CI: false
 
 
-    - name: Copy files via scp
-      uses: appleboy/scp-action@master              
-      with:
-        key: ${{ secrets.SSHKEY }}
-        source: "./build/"
-        dest: ${{ secrets.DEST }}
-        
 
-    - name: Move files to correct place
-      uses: appleboy/ssh-action@master
+  
+    - name: SCP files via ssh key
+      uses: appleboy/scp-action@master
+      env:
+          USERNAME: ${{ secrets.USERNAME }}
+          HOST: ${{ secrets.HOST }}
+          KEY: ${{ secrets.SSHKEY }}
       with:
-        key: ${{ secrets.SSHKEY }}
-        source: "./build/"
-        dest: ${{ secrets.DEST }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-        script: scp -i $key -r $source $dest
-        
+          source: './*'
+          target: '/home/shourde/hosted-projects/astellar2022' 
