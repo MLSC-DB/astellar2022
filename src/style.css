@@ -13,9 +13,11 @@ html {
 .purple {
   color: var(--imp-text-color) !important;
 }
-*{
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;
+
+* {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
 
 /* --------- */
@@ -486,16 +488,31 @@ html {
   margin: 40px 0;
 }
 
-.timeline-container::after {
-  background-color: #fff;
-  content: ' ';
-  /* opacity: 0.4; */
-  position: absolute;
-  left: calc(50% - 2px);
-  width: 4px;
-  height: 100%;
+.border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
-/* .timeline-container spacer{} */
+
+.border .point {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #356f89;
+  margin: 2.5px 0 10px;
+}
+
+.timeline-item-content .line {
+  flex: 1;
+  width: 5px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  right: -34px;
+  top: 1px;
+  height: calc(110% + 10px);
+}
 
 .timeline-container::after :hover,
 .timeline-container::after :focus {
@@ -622,7 +639,12 @@ html {
 
 .timeline-item:nth-child(odd) .timeline-item-content .circle {
   right: auto;
-  left: -40px;
+  left: -42px;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .line {
+  right: auto;
+  left: -34px;
 }
 
 @media only screen and (max-width: 1023px) {
