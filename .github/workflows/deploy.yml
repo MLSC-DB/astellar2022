@@ -42,5 +42,5 @@ jobs:
         source: "./build/"
         dest: ${{ secrets.DEST }}
         passphrase: ${{ secrets.PASSPHRASE }}
-        script: scp -i $key $source $dest
+        script: scp -i $key -r $source $dest
         
