@@ -511,7 +511,7 @@ html {
   position: absolute;
   right: -34px;
   top: 1px;
-  height: calc(110% + 10px);
+  height: calc(100% - 5px);
 }
 
 .timeline-container::after :hover,
