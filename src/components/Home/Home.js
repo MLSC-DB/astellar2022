@@ -5,6 +5,7 @@ import Sponsors from "./Sponsors";
 import Button from "react-bootstrap/Button";
 import Timeline from "./Timeline";
 import Contact from "./Contact";
+import Countdown from "../Countdown";
 
 function Home() {
   return (
@@ -47,20 +48,20 @@ function Home() {
                 pro or a novice, we'll have you hooked in no time.
               </p>
               <div className="sponsorUS">
-              <Button
-                variant="outline-light"
-                type="submit"
-                style={{
-                  fontSize: "1.5rem",
-                  width: "auto",
-                  height: "auto",
-                  background: "none",
-                  justifyContent:"center",
-                  align:"center"
-                }}
-              >
-                Register Your Team
-              </Button>{" "}
+                <Button
+                  variant="outline-light"
+                  type="submit"
+                  style={{
+                    fontSize: "1.5rem",
+                    width: "auto",
+                    height: "auto",
+                    background: "none",
+                    justifyContent: "center",
+                    align: "center",
+                  }}
+                >
+                  Register Your Team
+                </Button>{" "}
               </div>
             </Col>
             <Col
@@ -81,6 +82,7 @@ function Home() {
               />
             </Col>
           </Row>
+          <Countdown />
         </Container>
       </Container>
       <Timeline />

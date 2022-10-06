@@ -480,6 +480,7 @@ html {
     padding-top: 0 !important;
   }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
@@ -842,4 +843,74 @@ body {
 
 .hover-highlight:hover {
   filter: brightness(120%) saturate(120%);
+}
+
+.timer-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  gap: 0px 2rem;
+  width: 80%;
+  margin: 4rem 1rem;
+  padding-left: 20%;
+  padding-right: 0%;
+  z-index: 10;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .timer-container {
+    background: rgba(255, 255, 255, 0.07);
+    margin: 1rem 0 3rem 0;
+    justify-items: center;
+    border-radius: 10px;
+  }
+}
+
+
+.timecard {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  color: var(--imp-text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins";
+  font-size: 1.5rem !important;
+  padding: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  .timecard {
+    background: none;
+    margin: 0px;
+  }
+}
+
+
+.timecard p {
+  color: whitesmoke;
+  font-family: "Poppins";
+  font-size: 0.75rem !important;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  margin: 1.25rem 0px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .timecard p {
+    letter-spacing: 0.1rem;
+    margin: 0.5rem 0px 0px;
+
+  }
 }
