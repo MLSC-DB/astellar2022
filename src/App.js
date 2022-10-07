@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About"
+import Home from "./components/home/Home";
+import About from "./components/about/About"
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
+import Login from "./components/auth/Login";
 
 import {
   BrowserRouter as Router,
@@ -14,10 +15,15 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import { Provider } from "react-redux";
+import store from "./store";
+
+
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -32,6 +38,7 @@ function App() {
 
 
   return (
+    <Provider store={store}>
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
@@ -43,12 +50,15 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
+          <Route path="/auth" element={<Login />} />
+
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+    </Provider>
   );
 }
 

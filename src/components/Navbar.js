@@ -80,7 +80,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/play"
+                to="/auth"
                 onClick={() => updateExpanded(false)}
               >
                 Login/Sign Up
