@@ -6,7 +6,8 @@ import Button from "react-bootstrap/Button";
 import Timeline from "./Timeline";
 import Contact from "./Contact";
 import Countdown from "../Countdown";
-
+import Register from "../auth/Register";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
@@ -50,7 +51,10 @@ function Home() {
               <div className="sponsorUS">
                 <Button
                   variant="outline-light"
+                  href="/auth"
+                  target="_blank"
                   type="submit"
+
                   style={{
                     fontSize: "1.5rem",
                     width: "auto",

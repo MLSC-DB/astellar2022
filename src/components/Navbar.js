@@ -58,15 +58,15 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/play"
+                to="/no"
                 onClick={() => updateExpanded(false)}
               >
                 Leaderboard
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link
@@ -83,7 +83,7 @@ function NavBar() {
                 to="/auth"
                 onClick={() => updateExpanded(false)}
               >
-                Login/Sign Up
+                Register
               </Nav.Link>
             </Nav.Item>
 

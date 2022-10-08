@@ -4,6 +4,30 @@ import TimelineItem from "./TimelineItem";
 
 const timelineData = [
   {
+    text: "Stargaze : The Treasure Hunt",
+    date: "Oct 14 2022",
+    category: {
+      tag: "Offline",
+      color: "#018f69",
+    },
+  },
+  {
+    text: "BrokerJack : The Crossword Competition",
+    date: "Oct 14 2022",
+    category: {
+      tag: "Offline",
+      color: "#018f69",
+    },
+  },
+  {
+    text: "G4M3 : LAN and Console Gaming Event",
+    date: "Oct 15 2022",
+    category: {
+      tag: "Offline",
+      color: "#018f69",
+    },
+  },
+  {
     text: "Astellar : The Cryptic Hunt",
     date: "Oct 15-16 2022",
     category: {
@@ -11,33 +35,9 @@ const timelineData = [
       color: "#018f69",
     },
     link: {
-      url: "https://astellar.xyz/",
+      url: "https://astellar.xyz/about",
       text: "Details",
     },
-  },
-  {
-    text: "BrokerJack : The Crossword and Trading Competition",
-    date: "Oct 17 2022",
-    category: {
-      tag: "Offline",
-      color: "#018f69",
-    },
-    // link: {
-    //   url: "https://google.com",
-    //   text: "Details",
-    // },
-  },
-  {
-    text: "G'Game : LAN and Console Gaming Event",
-    date: "Oct 17 2022 5 PM Onwards",
-    category: {
-      tag: "Offline",
-      color: "#018f69",
-    },
-    // link: {
-    //   url: "https://google.com",
-    //   text: "Details",
-    // },
   },
 ];
 
@@ -50,7 +50,7 @@ function Timeline1() {
             fontSize: "2.5rem",
             fontWeight: "600",
             letterSpacing: "0.5rem",
-            paddingBottom:"3rem"
+            paddingBottom: "3rem",
           }}
         >
           <span className="purple"> EVENT TIMELINE </span>
