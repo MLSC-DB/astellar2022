@@ -9,28 +9,35 @@ const sponsorList = [
     text: "Taskade",
     link: {
       src: require("../../Assets/taskade.webp"),
-      url: "Details",
+      url: "https://www.taskade.com/",
     },
   },
   {
-    text: "Nescafe",
+    text: "Quick Heal",
     link: {
-      src: require("../../Assets/n.png"),
-      url: "https://www.nescafe.com/in/",
+      src: require("../../Assets/quickheal.png"),
+      url: "https://www.quickheal.co.in/",
     },
   },
   {
-    text: "NordVPN",
+    text: "Cybrancee",
     link: {
-      src: require("../../Assets/dg.webp"),
-      url: "Details",
+      src: require("../../Assets/cybrancee.png"),
+      url: "https://cybrancee.com/",
     },
   },
   {
-    text: "Axure",
+    text: "Balsamiq",
     link: {
-      src: require("../../Assets/axure.webp"),
-      url: "Details",
+      src: require("../../Assets/balsamiq.webp"),
+      url: "https://balsamiq.com/",
+    },
+  },
+  {
+    text: "Give My Certificate",
+    link: {
+      src: require("../../Assets/givemycertificate.webp"),
+      url: "https://givemycertificate.com/",
     },
   },
 ];
