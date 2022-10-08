@@ -1,8 +1,28 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import SponsorItem from "./SponsorItem";
+import SponsorTier from "./SponsorTier";
 import Button from "react-bootstrap/Button";
 import { AiOutlineMail } from "react-icons/ai";
+
+const TierList = [
+  {
+    text: "Youth Incorporated",
+    title: "YOUTH MEDIA SPONSOR",
+    link: {
+      src: require("../../Assets/youthinc.png"),
+      url: "https://youthincmag.com/",
+    },
+  },
+  {
+    text: "Foxmula",
+    title: "CERTIFICATE AND INTERNSHIP SPONSOR",
+    link: {
+      src: require("../../Assets/foxmula.png"),
+      url: "https://foxmula.com/",
+    },
+  },
+];
 
 const sponsorList = [
   {
@@ -42,6 +62,15 @@ const sponsorList = [
   },
 ];
 
+const tSpons = {
+  text: "Internship and Training",
+  title: "TITLE SPONSOR",
+  link: {
+    src: require("../../Assets/inp.png"),
+    url: "https://www.linkedin.com/company/internship-training/",
+  },
+};
+
 function Sponsors() {
   return (
     <>
@@ -58,6 +87,65 @@ function Sponsors() {
             <span className="purple"> SPONSORS </span>
           </h1>
           <Row>
+            <div className="title-sponsor">
+              <a
+                href={tSpons.link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h1
+                  style={{
+                    fontSize: "1.5rem",
+                    fontWeight: "600",
+                    letterSpacing: "0.1rem",
+                    paddingBottom: "0.7rem",
+                  }}
+                >
+                  <span className="purple"> {tSpons.title} </span>
+                </h1>
+                <div className="title-sponsor-tier-item">
+                  <div className="tBox">
+                  <img src={tSpons.link.src} alt={tSpons.text}></img>
+                  <span style={{ textAlign: "center" }}>
+                    {tSpons.text}{" "}
+                    <svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="popup"
+                      fill="none"
+                      height="16"
+                      stroke="#eeeeee"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1"
+                      width="16"
+                    >
+                      <g fill="none" fillRule="evenodd">
+                        <path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"></path>
+                      </g>
+                    </svg>
+                  </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div className="tier-sponsors">
+              {TierList.map((data, idx) => (
+                <SponsorTier data={data} key={idx} />
+              ))}
+            </div>
+
+            <h1
+              style={{
+                fontSize: "1.7rem",
+                fontWeight: "600",
+                letterSpacing: "0.5rem",
+                paddingBottom: "0.7rem",
+              }}
+            >
+              <span className="purple"> GENERAL SPONSORS </span>
+            </h1>
             <div className="gallery">
               {sponsorList.map((data, idx) => (
                 <SponsorItem data={data} key={idx} />
