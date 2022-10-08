@@ -1,0 +1,79 @@
+.form-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    width: 70% !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+@media (max-width: 767px) {
+    .form-gallery {
+        width: 90% !important;
+    }
+    .form-content{
+        width: 90%;
+    }
+    .form-Item{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 0 1rem !important;
+    color: whitesmoke;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+
+}
+
+
+.form-Item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    max-height: auto;
+
+}
+
+.form-Item label{
+    padding: 0.5rem;
+}
+
+.form-Item span{
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    display: none;
+}
+
+.form-Item input:invalid[focused="true"]~span{
+    
+    display: block;
+    
+}
+
+
+.form-Item input,
+.form-Item input:focus {
+    font-size: 1.1rem;
+    background: none;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .25);
+    padding: 1.4rem 0 1.4rem 1rem;
+    border-radius: 10px;
+    color: white;
+}
