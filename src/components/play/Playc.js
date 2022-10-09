@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Countdown from "../Countdown";
-import { useState } from "react";
 
 const Playc = (props) => {
   return (

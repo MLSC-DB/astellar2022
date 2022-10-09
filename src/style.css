@@ -1089,8 +1089,22 @@ body {
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-  /* filter: saturate(0) brightness(5); */
-
-
   opacity: .7;
+}
+
+.tBox li,.sponsor-tier-item li,.gallery li{
+  color: white;
+  text-align: left;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.sponsor-section .gallery{
+  padding: 4rem 1rem 1rem 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .sponsor-section .gallery{
+    padding: 0 1rem 0 0;
+  }
 }

@@ -6,8 +6,8 @@ import Button from "react-bootstrap/Button";
 import Timeline from "./Timeline";
 import Contact from "./Contact";
 import Countdown from "../Countdown";
-import Register from "../auth/Register";
-import { Link } from "react-router-dom";
+import Prizes from "./Prizes";
+
 function Home() {
   return (
     <>
@@ -51,7 +51,7 @@ function Home() {
               <div className="sponsorUS">
                 <Button
                   variant="outline-light"
-                  href="/auth"
+                  href="/register"
                   target="_blank"
                   type="submit"
 
@@ -90,6 +90,7 @@ function Home() {
         </Container>
       </Container>
       <Timeline />
+      <Prizes />
       <Sponsors />
       <Contact />
     </>
