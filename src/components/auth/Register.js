@@ -177,6 +177,7 @@ export default function Register() {
                   variant="outline-light"
                   type="submit"
                   style={{
+                    display: "flex",
                     fontSize: "1.5rem",
                     width: "auto",
                     height: "auto",

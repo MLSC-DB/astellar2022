@@ -15,11 +15,11 @@ const FormInput = (props) => {
         {...inputProps}
         onChange={onChange}
         onBlur={handleFocus}
-        onFocus={()=>
-            inputProps.name==="confirmPass" && setFocused(true)}
+        onFocus={() => inputProps.name === "confirmPass" && setFocused(true)}
         focused={focused.toString()}
       />
-      <span>{errorMessage}</span>
+      <span className="sw">Username should be 3-16 characters and shouldn't include any special character!</span>
+      <span className="error">{errorMessage}</span>
     </div>
   );
 };

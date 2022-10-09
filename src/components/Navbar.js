@@ -80,7 +80,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/auth"
+                to="/register"
                 onClick={() => updateExpanded(false)}
               >
                 Register
