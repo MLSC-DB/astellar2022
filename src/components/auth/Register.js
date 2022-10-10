@@ -6,7 +6,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const SRV_URL = process.env.REACT_APP_SRV_URL;
+// const SRV_URL = process.env.REACT_APP_SRV_URL;
 
 export default function Register() {
   const [values, setValues] = useState({
@@ -100,7 +100,7 @@ export default function Register() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post(`${SRV_URL}/user/signup`, {
+      .post("http:://20.227.212.72:3001/user/signup", {
         teamname: myObj.teamname,
         u1: myObj.u1,
         u3: myObj.u3,
