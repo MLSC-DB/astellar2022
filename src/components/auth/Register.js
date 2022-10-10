@@ -85,7 +85,7 @@ export default function Register() {
       type: "password",
       required: true,
       errorMessage:
-        "Password should be atleast 8-16 characters and must include atleast 1 letter, 1 number and 1 special character ",
+        "Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character ",
       placeholder: "Password",
       label: "Enter password",
     },

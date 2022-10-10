@@ -77,7 +77,8 @@ function NavBar() {
                 Play
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/register"
@@ -85,7 +86,7 @@ function NavBar() {
               >
                 Register
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             {/* <Nav.Item>
               <Nav.Link

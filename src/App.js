@@ -6,7 +6,7 @@ import About from "./components/about/About";
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
-import Register from "./components/auth/Register";
+// import Register from "./components/auth/Register";
 import Playc from "./components/play/Playc";
 import TitleSpons from "./components/TitleSpons";
 
@@ -47,7 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
-          <Route path="/register" element={<Register />} />
+          {/* <Route path="/register" element={<Register />} /> */}
           <Route path="/play" element={<Playc />} />
 
           <Route path="*" element={<Navigate to="/" />} />
