@@ -6,7 +6,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// const SRV_URL = process.env.REACT_APP_SRV_URL;
 
 export default function Register() {
   const [values, setValues] = useState({
@@ -96,7 +95,6 @@ export default function Register() {
 
     const data = new FormData(e.target);
     const payload = JSON.stringify(Object.fromEntries(data.entries()));
-    console.log(SRV_URL);
     const myObj = JSON.parse(payload);
 
     axios
