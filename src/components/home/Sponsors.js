@@ -68,6 +68,13 @@ const sponsorList = [
       url: "https://givemycertificate.com/",
     },
   },
+  {
+    text: "Art of Problem Solving",
+    link: {
+      src: require("../../Assets/aops.png"),
+      url: "https://artofproblemsolving.com/",
+    },
+  },
 ];
 
 const tSpons = {

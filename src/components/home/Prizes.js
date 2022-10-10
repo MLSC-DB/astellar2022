@@ -43,8 +43,12 @@ function Prizes() {
                       <li>
                         Internship and Training merchandise (Mugs and Goodies){" "}
                       </li>
-                      <li>Foxmula merchandise (Tshirt and Mugs) </li>
+                      <li>Foxmula T-Shirt</li>
                       <li>Free Microsoft course Worth ₹ 7700 </li>
+                      <li>
+                        Discount Coupons worth $25 from the Art of Problem
+                        Solving
+                      </li>
                       <li>Lifetime upgradation on Taskade </li>
                       <li>One month free website hosting on Cyberancee </li>
                       <li>Extra 10% discount on Coding Ninjas paid courses</li>
@@ -76,8 +80,11 @@ function Prizes() {
                         <li>
                           Internship and Training merchandise (Mugs and Goodies){" "}
                         </li>
-                        <li>Foxmula merchandise (Tshirt and Mugs) </li>
-
+                        <li>Foxmula T-Shirt</li>
+                        <li>
+                          Discount Coupons worth $25 from the Art of Problem
+                          Solving
+                        </li>
                         <li>Lifetime upgradation on Taskade </li>
                         <li>One month free website hosting on Cyberancee </li>
                         <li>
@@ -111,7 +118,7 @@ function Prizes() {
                         <li>
                           Internship and Training merchandise (Mugs and Goodies){" "}
                         </li>
-                        <li>Foxmula merchandise (Tshirt and Mugs) </li>
+                        <li>Foxmula T-Shirt</li>
 
                         <li>Lifetime upgradation on Taskade </li>
                         <li>One month free website hosting on Cyberancee </li>
