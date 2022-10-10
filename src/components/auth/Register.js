@@ -171,6 +171,7 @@ export default function Register() {
       transform:scale(1.2);}    
     `}
                 </style>
+                <div className="g-recaptcha" data-sitekey="6Ld2Cf0fAAAAAGUlXmCKZBT8j6cG0Dk5kb7qzriZ"></div>
                 <Button
                   variant="outline-light"
                   type="submit"
