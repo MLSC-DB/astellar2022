@@ -48,7 +48,7 @@ function Home() {
                 <b className="purple"> Astellar! </b>Whether you're a seasoned
                 pro or a novice, we'll have you hooked in no time.
               </p>
-              <div className="sponsorUS">
+              <div className="sponsorUS" style={{justifyContent:"left",display:"flex",justifySelf:"center"}}>
                 <Button
                   variant="outline-light"
                   href="/register"
@@ -57,11 +57,10 @@ function Home() {
 
                   style={{
                     fontSize: "1.5rem",
-                    width: "auto",
+                    width: "90%",
                     height: "auto",
                     background: "none",
-                    justifyContent: "center",
-                    align: "center",
+                    
                   }}
                 >
                   Register Your Team
