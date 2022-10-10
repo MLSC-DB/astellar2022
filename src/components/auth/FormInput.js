@@ -18,7 +18,7 @@ const FormInput = (props) => {
         onFocus={() => inputProps.name === "confirmPass" && setFocused(true)}
         focused={focused.toString()}
       />
-      <span className="sw">Username should be 3-16 characters and shouldn't include any special character!</span>
+      <span className="sw">Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character </span>
       <span className="error">{errorMessage}</span>
     </div>
   );
