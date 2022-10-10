@@ -98,7 +98,7 @@ export default function Register() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post("http:://20.227.212.72:3001/user/signup", {
+      .post("/user/signup/", {
         teamname: myObj.teamname,
         u1: myObj.u1,
         u3: myObj.u3,
