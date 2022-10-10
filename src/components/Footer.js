@@ -1,16 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { useEffect } from "react";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
-  useEffect(() => {
-    const timer = setInterval(() => {
-      console.log("backslash ki maa ki chut");
-      console.log("bcs laude pe");
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
   return (
     
       <Container fluid className="footer">
