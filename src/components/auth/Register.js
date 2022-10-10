@@ -6,7 +6,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 export default function Register() {
   const [values, setValues] = useState({
     teamname: "",
@@ -23,8 +22,9 @@ export default function Register() {
       name: "teamname",
       type: "text",
       required: true,
+      pattern: "^[A-Za-z0-9]{3,16}$",
       errorMessage:
-        "Username should be 3-16 characters and shouldn't include any special character!",
+        "Teamname should be 3-16 characters and shouldn't include any special character!",
       placeholder: "Teamname",
       label: "Enter Teamname",
     },
@@ -167,11 +167,16 @@ export default function Register() {
                 <style type="text/css">
                   {`
     .btn-outline-light:hover{
-      color: white;
-      transform:scale(1.2);}    
+      color: white;}
+      .btn-outline-light:active{
+        color:green;
+      }    
     `}
                 </style>
-                <div className="g-recaptcha" data-sitekey="6Ld2Cf0fAAAAAGUlXmCKZBT8j6cG0Dk5kb7qzriZ"></div>
+                <div
+                  className="g-recaptcha"
+                  data-sitekey="6Ld2Cf0fAAAAAGUlXmCKZBT8j6cG0Dk5kb7qzriZ"
+                ></div>
                 <Button
                   variant="outline-light"
                   type="submit"

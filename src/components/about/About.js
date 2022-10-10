@@ -27,16 +27,21 @@ function About() {
                   fontSize: "1.2rem",
                 }}
               >
-                Our story at <b class="purple">MLSC DB </b> is more than just a
-                fancy name. We’re a community of geeks who enjoy sharing
-                knowledge with the world. We want our members to be able to
-                benefit from our collective expertise, regardless of their
-                current exposure. We conduct monthly meetups, hands-on workshops
-                and <b class="purple">&lt;cool&gt;</b> events. If you have any
+                Our Story at <b class="purple">MLSC DB </b> is forged with
+                passion and grit. We’re a welcoming community of geeks who
+                strongly believe in helping others learn through <b class="purple">exciting
+                workshops and hands on projects</b>. We want our members to be able
+                to benefit from our collective expertise, whether they are a
+                stack overflow chad or a python novice. We conduct monthly
+                meetups, hands-on workshops and{" "}
+                <b class="purple">&lt;cool&gt;</b> events. If you have any
                 questions, our friendly and knowledgeable team would be more
-                than happy to help.
+                than happy to help. 
+                
                 <br />
-                <br /> Thank you for being part of the MLSC community!
+                <br />In the spirit of science and in the name of
+                Alan Turing, we welcome you! May you experience the dopamine
+                rush of snorting code!
               </p>
             </Col>
           </Row>
