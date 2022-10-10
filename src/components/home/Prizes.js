@@ -37,8 +37,13 @@ function Prizes() {
                     <ul>
                       <li>₹ 3000/- cash prize </li>
                       <li>₹ 3000/- Amazon voucher </li>
-                      <li>Internship and Training merch (Mugs and Goodies) </li>
-                      <li>Foxmula merch (Tshirt and Mugs) </li>
+                      <li>
+                        Internship Opportunities from Internship and Training
+                      </li>
+                      <li>
+                        Internship and Training merchandise (Mugs and Goodies){" "}
+                      </li>
+                      <li>Foxmula merchandise (Tshirt and Mugs) </li>
                       <li>Free Microsoft course Worth ₹ 7700 </li>
                       <li>Lifetime upgradation on Taskade </li>
                       <li>One month free website hosting on Cyberancee </li>
@@ -66,9 +71,12 @@ function Prizes() {
                         <li>₹ 2000/- cash prize </li>
                         <li>₹ 2000/- Amazon voucher </li>
                         <li>
-                          Internship and Training merch (Mugs and Goodies){" "}
+                          Internship Opportunities from Internship and Training
                         </li>
-                        <li>Foxmula merch (Tshirt and Mugs) </li>
+                        <li>
+                          Internship and Training merchandise (Mugs and Goodies){" "}
+                        </li>
+                        <li>Foxmula merchandise (Tshirt and Mugs) </li>
 
                         <li>Lifetime upgradation on Taskade </li>
                         <li>One month free website hosting on Cyberancee </li>
@@ -98,9 +106,12 @@ function Prizes() {
                         <li>₹ 1000/- cash prize </li>
                         <li>₹ 1000/- Amazon voucher </li>
                         <li>
-                          Internship and Training merch (Mugs and Goodies){" "}
+                          Internship Opportunities from Internship and Training
                         </li>
-                        <li>Foxmula merch (Tshirt and Mugs) </li>
+                        <li>
+                          Internship and Training merchandise (Mugs and Goodies){" "}
+                        </li>
+                        <li>Foxmula merchandise (Tshirt and Mugs) </li>
 
                         <li>Lifetime upgradation on Taskade </li>
                         <li>One month free website hosting on Cyberancee </li>
