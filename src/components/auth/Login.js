@@ -45,7 +45,7 @@ export default function Login() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post("http://localhost:3001/user/signin/", {
+      .post("/api/user/signin/", {
         teamname: myObj.teamname,
 
         password: myObj.password,
