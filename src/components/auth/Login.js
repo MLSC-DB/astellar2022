@@ -5,8 +5,10 @@ import FormInput from "./FormInput";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const history = useNavigate();
   const [values, setValues] = useState({
     teamname: "",
     password: "",
@@ -58,20 +60,9 @@ export default function Login() {
           draggable: true,
           progress: undefined,
         });
-        // const tok = result.data.token;
-
-        // axios
-        //   .get("http://localhost:3001/user/getDetails", {
-        //     headers: {
-        //       Authorization: "Bearer " + tok, //the token is a variable which holds the token
-        //     },
-        //   })
-        //   .then(function (response) {
-        //     console.log(response.data);
-        //   })
-        //   .catch(function (error) {
-        //     console.log(error);
-        //   });
+        //setting token to localstorage
+        localStorage.setItem("jwt", result.data.token);
+        history("/profile");
       })
       .catch((err) => {
         var msg = "";
