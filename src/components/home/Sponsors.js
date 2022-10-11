@@ -19,7 +19,7 @@ const TierList = [
     title: "CERTIFICATE AND INTERNSHIP SPONSOR",
     link: {
       src: require("../../Assets/foxmula.png"),
-      url: "https://foxmula.com/",
+      url: "https://forms.gle/ekZ3q78GhaTXrdQD8",
     },
   },
   {
