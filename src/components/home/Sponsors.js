@@ -75,6 +75,13 @@ const sponsorList = [
       url: "https://artofproblemsolving.com/",
     },
   },
+  {
+    text: "Dunk Dudes",
+    link: {
+      src: require("../../Assets/prtk.png"),
+      url: "https://www.instagram.com/dunkdudes.in/",
+    },
+  },
 ];
 
 const tSpons = {
