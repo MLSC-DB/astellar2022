@@ -30,6 +30,7 @@ export default function Register() {
       name: "teamname",
       type: "text",
       required: true,
+      autocomplete:"off",
       pattern: "^[A-Za-z0-9]{3,16}$",
       errorMessage:
         "Teamname should be 3-16 characters and shouldn't include any special character or space!",
@@ -40,6 +41,7 @@ export default function Register() {
       id: 2,
       name: "email",
       type: "email",
+      autocomplete:"off",
       required: true,
       errorMessage: "Please enter a valid email address!",
       placeholder: "someone@domain.com",
@@ -49,6 +51,7 @@ export default function Register() {
       id: 3,
       name: "u1",
       type: "text",
+      autocomplete:"off",
       required: true,
       errorMessage: "Leader Name can't be empty",
       placeholder: "Leader name",
@@ -58,6 +61,7 @@ export default function Register() {
       id: 4,
       name: "d1",
       type: "text",
+      autocomplete:"off",
       required: true,
       errorMessage: "Department can't be empty",
       placeholder: "CSE",
@@ -67,6 +71,7 @@ export default function Register() {
       id: 5,
       name: "b1",
       type: "number",
+      autocomplete:"off",
       required: true,
       errorMessage: "Year of Graduation can't be empty!",
       placeholder: "2025",
@@ -75,6 +80,7 @@ export default function Register() {
     {
       id: 6,
       name: "u2",
+      autocomplete:"off",
       type: "text",
       errorMessage: "",
       placeholder: "Team Player 1",
@@ -84,7 +90,7 @@ export default function Register() {
       id: 7,
       name: "email1",
       type: "email",
-
+      autocomplete:"off",
       errorMessage: "Please enter a valid email address!",
       placeholder: "someone@domain.com",
       label: "E-mail ID of Player 1",
@@ -93,7 +99,7 @@ export default function Register() {
       id: 8,
       name: "d2",
       type: "text",
-
+      autocomplete:"off",
       placeholder: "CSE",
       label: "Department",
     },
@@ -101,7 +107,7 @@ export default function Register() {
       id: 9,
       name: "b2",
       type: "number",
-
+      autocomplete:"off",
       placeholder: "2025",
       label: "Year of Graduation",
     },
@@ -109,6 +115,7 @@ export default function Register() {
       id: 10,
       name: "u3",
       type: "text",
+      autocomplete:"off",
       errorMessage: "",
       placeholder: "Team Player 2",
       label: "Name of Player 2",
@@ -117,6 +124,7 @@ export default function Register() {
       id: 11,
       name: "email2",
       type: "email",
+      autocomplete:"off",
       errorMessage: "Please enter a valid email address!",
       placeholder: "someone@domain.com",
       label: "E-mail ID of the Player 2",
@@ -125,6 +133,7 @@ export default function Register() {
       id: 12,
       name: "d3",
       type: "text",
+      autocomplete:"off",
       placeholder: "CSE",
       label: "Department",
     },
@@ -132,6 +141,7 @@ export default function Register() {
       id: 13,
       name: "b3",
       type: "number",
+      autocomplete:"off",
       placeholder: "2025",
       label: "Year of Graduation",
     },
@@ -140,6 +150,7 @@ export default function Register() {
       name: "password",
       type: "password",
       required: true,
+      autocomplete:"off",
       errorMessage:
         "Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character ",
       placeholder: "Password",
@@ -154,7 +165,7 @@ export default function Register() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post("/api/user/signup/", {
+      .post("http://localhost:3001/api/user/signup/", {
         teamname: myObj.teamname,
         u1: myObj.u1,
         u3: myObj.u3,

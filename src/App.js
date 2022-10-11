@@ -23,6 +23,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/auth/Login";
 import Profile from "./components/Profile";
+import Admin from "./components/Admin";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -52,6 +53,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/play" element={<Playc />} />
 
           <Route path="*" element={<Navigate to="/" />} />
