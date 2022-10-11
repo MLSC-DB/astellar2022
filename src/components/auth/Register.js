@@ -32,7 +32,7 @@ export default function Register() {
       required: true,
       pattern: "^[A-Za-z0-9]{3,16}$",
       errorMessage:
-        "Teamname should be 3-16 characters and shouldn't include any special character!",
+        "Teamname should be 3-16 characters and shouldn't include any special character or space!",
       placeholder: "Teamname",
       label: "Enter Teamname",
     },
