@@ -44,7 +44,7 @@ function Prizes() {
                         Internship and Training merchandise (Mugs and Goodies){" "}
                       </li>
                       <li>Foxmula T-Shirt</li>
-                      <li>Free Microsoft course Worth ₹ 7700 </li>
+                      <li>Free Microsoft course Worth ₹ 9500 </li>
                       <li>
                         Discount Coupons worth $25 from the Art of Problem
                         Solving

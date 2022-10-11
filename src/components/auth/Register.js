@@ -11,8 +11,16 @@ export default function Register() {
     teamname: "",
     email: "",
     u1: "",
+    b1: "",
+    b2: "",
+    b3: "",
+    d1: "",
+    d2: "",
+    d3: "",
     u2: "",
     u3: "",
+    email1: "",
+    email2: "",
     password: "",
   });
 
@@ -48,6 +56,24 @@ export default function Register() {
     },
     {
       id: 4,
+      name: "d1",
+      type: "text",
+      required: true,
+      errorMessage: "Department can't be empty",
+      placeholder: "CSE",
+      label: "Department",
+    },
+    {
+      id: 5,
+      name: "b1",
+      type: "number",
+      required: true,
+      errorMessage: "Year of Graduation can't be empty!",
+      placeholder: "2025",
+      label: "Year of Graduation",
+    },
+    {
+      id: 6,
       name: "u2",
       type: "text",
       errorMessage: "",
@@ -55,7 +81,7 @@ export default function Register() {
       label: "Name of Player 1",
     },
     {
-      id: 5,
+      id: 7,
       name: "email1",
       type: "email",
 
@@ -64,7 +90,23 @@ export default function Register() {
       label: "E-mail ID of Player 1",
     },
     {
-      id: 6,
+      id: 8,
+      name: "d2",
+      type: "text",
+
+      placeholder: "CSE",
+      label: "Department",
+    },
+    {
+      id: 9,
+      name: "b2",
+      type: "number",
+
+      placeholder: "2025",
+      label: "Year of Graduation",
+    },
+    {
+      id: 10,
       name: "u3",
       type: "text",
       errorMessage: "",
@@ -72,7 +114,7 @@ export default function Register() {
       label: "Name of Player 2",
     },
     {
-      id: 7,
+      id: 11,
       name: "email2",
       type: "email",
       errorMessage: "Please enter a valid email address!",
@@ -80,7 +122,21 @@ export default function Register() {
       label: "E-mail ID of the Player 2",
     },
     {
-      id: 8,
+      id: 12,
+      name: "d3",
+      type: "text",
+      placeholder: "CSE",
+      label: "Department",
+    },
+    {
+      id: 13,
+      name: "b3",
+      type: "number",
+      placeholder: "2025",
+      label: "Year of Graduation",
+    },
+    {
+      id: 14,
       name: "password",
       type: "password",
       required: true,
@@ -103,6 +159,12 @@ export default function Register() {
         u1: myObj.u1,
         u3: myObj.u3,
         u2: myObj.u2,
+        d1: myObj.d1,
+        d2: myObj.d2,
+        d3: myObj.d3,
+        b1: myObj.b1,
+        b2: myObj.b2,
+        b3: myObj.b3,
         email1: myObj.email1,
         email2: myObj.email2,
         email: myObj.email,
@@ -120,8 +182,12 @@ export default function Register() {
         });
       })
       .catch((err) => {
-        const msg = err.response.data.errors[0].msg;
-
+        var msg = "";
+        if (typeof err.response == "undefined") {
+          msg = "Server error, please try later!";
+        } else {
+          msg = err.response.data.errors[0].msg;
+        }
         toast.error(msg, {
           position: "top-center",
           autoClose: 5000,

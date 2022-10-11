@@ -1,10 +1,101 @@
-import React from "react";
-import { useRef, useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Container, Row } from "react-bootstrap";
 import "./login.css";
-import Button from "react-bootstrap/Button";
+import FormInput from "./FormInput";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-function Login() {
+export default function Login() {
+  const [values, setValues] = useState({
+    teamname: "",
+    password: "",
+  });
+
+  const inputs = [
+    {
+      id: 1,
+      name: "teamname",
+      type: "text",
+      required: true,
+      pattern: "^[A-Za-z0-9]{3,16}$",
+      errorMessage:
+        "Teamname should be 3-16 characters and shouldn't include any special character!",
+      placeholder: "Teamname",
+      label: "Enter Teamname",
+    },
+    {
+      id: 2,
+      name: "password",
+      type: "password",
+      required: true,
+      errorMessage:
+        "Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character ",
+      placeholder: "Password",
+      label: "Enter password",
+    },
+  ];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+    const payload = JSON.stringify(Object.fromEntries(data.entries()));
+    const myObj = JSON.parse(payload);
+
+    axios
+      .post("http://localhost:3001/user/signin/", {
+        teamname: myObj.teamname,
+
+        password: myObj.password,
+      })
+      .then((result) => {
+        toast.success(" Successful Login!", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        // const tok = result.data.token;
+
+        // axios
+        //   .get("http://localhost:3001/user/getDetails", {
+        //     headers: {
+        //       Authorization: "Bearer " + tok, //the token is a variable which holds the token
+        //     },
+        //   })
+        //   .then(function (response) {
+        //     console.log(response.data);
+        //   })
+        //   .catch(function (error) {
+        //     console.log(error);
+        //   });
+      })
+      .catch((err) => {
+        var msg = "";
+        if (typeof err.response == "undefined") {
+          msg = "Server error, please try again!";
+        } else {
+          msg = err.response.data.errors[0].msg;
+        }
+        toast.error(msg, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      });
+  };
+
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
   return (
     <>
       <Container fluid className="sponsor-section" id="about">
@@ -21,177 +112,52 @@ function Login() {
             <span className="purple"> LOGIN </span>
           </h1>
           <Row>
-            <div className="gallery">
-              <div className="about-content"></div>
+            <div className="form-gallery">
+              <form onSubmit={handleSubmit} className="form-content">
+                {inputs.map((input) => (
+                  <FormInput
+                    key={input.id}
+                    {...input}
+                    value={values[input.name]}
+                    onChange={onChange}
+                  />
+                ))}
+                <style type="text/css">
+                  {`
+    .btn-outline-light:hover{
+      color: white;}
+      .btn-outline-light:active{
+        color:green;
+      }    
+    `}
+                </style>
+                <div
+                  className="g-recaptcha"
+                  data-sitekey="6Ld2Cf0fAAAAAGUlXmCKZBT8j6cG0Dk5kb7qzriZ"
+                ></div>
+                <Button
+                  variant="outline-light"
+                  type="submit"
+                  style={{
+                    display: "flex",
+                    fontSize: "1.5rem",
+                    width: "auto",
+                    height: "auto",
+                    background: "none",
+                    marginTop: "3rem",
+                    marginBottom: "3rem",
+                    justifyContent: "center",
+                    align: "center",
+                  }}
+                >
+                  Login !
+                </Button>{" "}
+              </form>
             </div>
           </Row>
         </Container>
       </Container>
+      <ToastContainer />
     </>
   );
 }
-export default Login;
-
-// const Register = () => {
-//     return (
-//       <>
-//         <section>
-//           <p
-//             ref={errRef}
-//             className={errMsg ? "errmsg" : "offscreen"}
-//             aria-live="assertive"
-//           >
-//             {errMsg}
-//           </p>
-//           <h1>Register</h1>
-//           <form onSubmit={handleSubmit}>
-//             <label htmlFor="username">
-//               Username:
-//               <FontAwesomeIcon
-//                 icon={faCheck}
-//                 className={validName ? "valid" : "hide"}
-//               />
-//               <FontAwesomeIcon
-//                 icon={faTimes}
-//                 className={
-//                   validName || !user ? "hide" : "invalid"
-//                 }
-//               />
-//             </label>
-//             <input
-//               type="text"
-//               id="username"
-//               ref={userRef}
-//               autoComplete="off"
-//               onChange={(e) => setUser(e.target.value)}
-//               value={user}
-//               required
-//               aria-invalid={validName ? "false" : "true"}
-//               aria-describedby="uidnote"
-//               onFocus={() => setUserFocus(true)}
-//               onBlur={() => setUserFocus(false)}
-//             />
-//             <p
-//               id="uidnote"
-//               className={
-//                 userFocus && user && !validName
-//                   ? "instructions"
-//                   : "offscreen"
-//               }
-//             >
-//               <FontAwesomeIcon icon={faInfoCircle} />
-//               4 to 24 characters.
-//               <br />
-//               Must begin with a letter.
-//               <br />
-//               Letters, numbers, underscores, hyphens allowed.
-//             </p>
-//             <label htmlFor="password">
-//               Password:
-//               <FontAwesomeIcon
-//                 icon={faCheck}
-//                 className={validPwd ? "valid" : "hide"}
-//               />
-//               <FontAwesomeIcon
-//                 icon={faTimes}
-//                 className={
-//                   validPwd || !pwd ? "hide" : "invalid"
-//                 }
-//               />
-//             </label>
-//             <input
-//               type="password"
-//               id="password"
-//               onChange={(e) => setPwd(e.target.value)}
-//               value={pwd}
-//               required
-//               aria-invalid={validPwd ? "false" : "true"}
-//               aria-describedby="pwdnote"
-//               onFocus={() => setPwdFocus(true)}
-//               onBlur={() => setPwdFocus(false)}
-//             />
-//             <p
-//               id="pwdnote"
-//               className={
-//                 pwdFocus && !validPwd
-//                   ? "instructions"
-//                   : "offscreen"
-//               }
-//             >
-//               <FontAwesomeIcon icon={faInfoCircle} />
-//               8 to 24 characters.
-//               <br />
-//               Must include uppercase and lowercase letters, a
-//               number and a special character.
-//               <br />
-//               Allowed special characters:{" "}
-//               <span aria-label="exclamation mark">
-//                 !
-//               </span>{" "}
-//               <span aria-label="at symbol">@</span>{" "}
-//               <span aria-label="hashtag">#</span>{" "}
-//               <span aria-label="dollar sign">$</span>{" "}
-//               <span aria-label="percent">%</span>
-//             </p>
-//             <label htmlFor="confirm_pwd">
-//               Confirm Password:
-//               <FontAwesomeIcon
-//                 icon={faCheck}
-//                 className={
-//                   validMatch && matchPwd ? "valid" : "hide"
-//                 }
-//               />
-//               <FontAwesomeIcon
-//                 icon={faTimes}
-//                 className={
-//                   validMatch || !matchPwd ? "hide" : "invalid"
-//                 }
-//               />
-//             </label>
-//             <input
-//               type="password"
-//               id="confirm_pwd"
-//               onChange={(e) => setMatchPwd(e.target.value)}
-//               value={matchPwd}
-//               required
-//               aria-invalid={validMatch ? "false" : "true"}
-//               aria-describedby="confirmnote"
-//               onFocus={() => setMatchFocus(true)}
-//               onBlur={() => setMatchFocus(false)}
-//             />
-//             <p
-//               id="confirmnote"
-//               className={
-//                 matchFocus && !validMatch
-//                   ? "instructions"
-//                   : "offscreen"
-//               }
-//             >
-//               <FontAwesomeIcon icon={faInfoCircle} />
-//               Must match the first password input field.
-//             </p>
-//             <button
-//               disabled={
-//                 !validName || !validPwd || !validMatch
-//                   ? true
-//                   : false
-//               }
-//             >
-//               Sign Up
-//             </button>
-//           </form>
-//           <p>
-//             Already registered?
-//             <br />
-//             <span className="line">
-//               {/*put router link here*/}
-//               {/* <a href="#">Sign In</a> */}
-//             </span>
-//           </p>
-//         </section>
-//         )}
-//       </>
-//     );
-//   };
-
-//   export default Register;
