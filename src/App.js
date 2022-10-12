@@ -24,6 +24,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/auth/Login";
 import Profile from "./components/Profile";
 import Admin from "./components/Admin";
+import Level from "./components/play/Level";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -51,6 +52,7 @@ function App() {
 
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
+
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/profile" element={<Profile />} /> */}
 
