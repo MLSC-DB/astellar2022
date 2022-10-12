@@ -38,10 +38,10 @@ function Prizes() {
                       <li>₹ 3000/- cash prize </li>
                       <li>₹ 3000/- Amazon voucher </li>
                       <li>
-                        Internship Opportunities from Internship and Training
+                        Internship Opportunities from Internship &amp; Training
                       </li>
                       <li>
-                        Internship and Training merchandise (Mugs and Goodies){" "}
+                        Internship &amp; Training merchandise (Mugs and Goodies){" "}
                       </li>
                       <li>Foxmula T-Shirt</li>
                       <li>Free Microsoft course Worth ₹ 9500 </li>
@@ -50,7 +50,7 @@ function Prizes() {
                         Solving
                       </li>
                       <li>Lifetime upgradation on Taskade </li>
-                      <li>One month free website hosting on Cyberancee </li>
+                      <li>One month free website hosting on Cybranceee </li>
                       <li>Extra 10% discount on Coding Ninjas paid courses</li>
                     </ul>{" "}
                   </span>
@@ -75,10 +75,10 @@ function Prizes() {
                         <li>₹ 2000/- cash prize </li>
                         <li>₹ 2000/- Amazon voucher </li>
                         <li>
-                          Internship Opportunities from Internship and Training
+                          Internship Opportunities from Internship &amp; Training
                         </li>
                         <li>
-                          Internship and Training merchandise (Mugs and Goodies){" "}
+                        Internship &amp; Training merchandise (Mugs and Goodies){" "}
                         </li>
                         <li>Foxmula T-Shirt</li>
                         <li>
@@ -86,7 +86,7 @@ function Prizes() {
                           Solving
                         </li>
                         <li>Lifetime upgradation on Taskade </li>
-                        <li>One month free website hosting on Cyberancee </li>
+                        <li>One month free website hosting on Cybranceee </li>
                         <li>
                           Extra 10% discount on Coding Ninjas paid courses
                         </li>
@@ -113,15 +113,15 @@ function Prizes() {
                         <li>₹ 1000/- cash prize </li>
                         <li>₹ 1000/- Amazon voucher </li>
                         <li>
-                          Internship Opportunities from Internship and Training
+                          Internship Opportunities from Internship &amp; Training
                         </li>
                         <li>
-                          Internship and Training merchandise (Mugs and Goodies){" "}
+                          Internship &amp; Training merchandise (Mugs and Goodies){" "}
                         </li>
                         <li>Foxmula T-Shirt</li>
 
                         <li>Lifetime upgradation on Taskade </li>
-                        <li>One month free website hosting on Cyberancee </li>
+                        <li>One month free website hosting on Cybranceee </li>
                         <li>
                           Extra 10% discount on Coding Ninjas paid courses
                         </li>
@@ -156,14 +156,17 @@ function Prizes() {
                       <li>Free Coding Ninjas scholarship test</li>
                       <li>
                         Free mock interviews for government and non-goverment
-                        job
+                        jobs
                       </li>
                       <li>5 year free upgradation on Taskade</li>
                       <li>
-                        90-days extended trial promocode form Balasmiq Cloud
+                        90-days extended trial promocode from Balsamiq Cloud
+                      </li>
+                      <li>
+                        Free certification courses from Internship &amp; Training
                       </li>
 
-                      <li>One month free website hosting on cyberancee</li>
+                      <li>One month free website hosting on Cybranceee</li>
                     </ul>{" "}
                   </span>
                 </div>

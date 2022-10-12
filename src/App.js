@@ -50,8 +50,8 @@ function App() {
 
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/profile" element={<Profile />} /> */}
           <Route path="/play" element={<Playc />} />
 
           <Route path="*" element={<Navigate to="/" />} />
