@@ -85,7 +85,7 @@ const sponsorList = [
 ];
 
 const tSpons = {
-  text: "Internship &amp; Training",
+  text: "Internship & Training",
   title: "TITLE SPONSOR",
   link: {
     src: require("../../Assets/inp.png"),

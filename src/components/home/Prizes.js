@@ -50,7 +50,7 @@ function Prizes() {
                         Solving
                       </li>
                       <li>Lifetime upgradation on Taskade </li>
-                      <li>One month free website hosting on Cybranceee </li>
+                      <li>One month free website hosting on Cybrancee </li>
                       <li>Extra 10% discount on Coding Ninjas paid courses</li>
                     </ul>{" "}
                   </span>
@@ -86,7 +86,7 @@ function Prizes() {
                           Solving
                         </li>
                         <li>Lifetime upgradation on Taskade </li>
-                        <li>One month free website hosting on Cybranceee </li>
+                        <li>One month free website hosting on Cybrancee </li>
                         <li>
                           Extra 10% discount on Coding Ninjas paid courses
                         </li>
@@ -121,7 +121,7 @@ function Prizes() {
                         <li>Foxmula T-Shirt</li>
 
                         <li>Lifetime upgradation on Taskade </li>
-                        <li>One month free website hosting on Cybranceee </li>
+                        <li>One month free website hosting on Cybrancee </li>
                         <li>
                           Extra 10% discount on Coding Ninjas paid courses
                         </li>
@@ -166,7 +166,7 @@ function Prizes() {
                         Free certification courses from Internship &amp; Training
                       </li>
 
-                      <li>One month free website hosting on Cybranceee</li>
+                      <li>One month free website hosting on Cybrancee</li>
                     </ul>{" "}
                   </span>
                 </div>
