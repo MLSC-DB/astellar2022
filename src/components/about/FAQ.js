@@ -20,7 +20,7 @@ function FAQ() {
     {
       question: "Who can participate?",
       answer:
-        "Everyone is welcome to participate, be it, students, professionals or aliens from different Planet!",
+        "Everyone is welcome to participate, be it, students, professionals or aliens from a different planet!",
       open: false,
     },
     {
@@ -32,7 +32,7 @@ function FAQ() {
     {
       question: "How many members do we need in a team?",
       answer:
-        "You can participate solo as well a team with at max 3 members can be formed.",
+        "You can participate solo or in a team with at max 3 members.",
       open: false,
     },
     {
