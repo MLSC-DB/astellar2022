@@ -50,8 +50,8 @@ const sponsorList = [
   {
     text: "Cybrancee",
     link: {
-      src: require("../../Assets/Cybrancee.png"),
-      url: "https://Cybrancee.com/",
+      src: require("../../Assets/cybrancee.png"),
+      url: "https://cybrancee.com/",
     },
   },
   {
