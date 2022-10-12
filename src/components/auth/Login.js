@@ -20,6 +20,7 @@ export default function Login() {
       name: "teamname",
       type: "text",
       required: true,
+      autocomplete:"off",
       pattern: "^[A-Za-z0-9]{3,16}$",
       errorMessage:
         "Teamname should be 3-16 characters and shouldn't include any special character!",
@@ -30,6 +31,7 @@ export default function Login() {
       id: 2,
       name: "password",
       type: "password",
+      autocomplete:"off",
       required: true,
       errorMessage:
         "Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character ",
@@ -45,7 +47,7 @@ export default function Login() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post("/api/user/signin/", {
+      .post("http://localhost:3001/api/user/signin/", {
         teamname: myObj.teamname,
 
         password: myObj.password,
