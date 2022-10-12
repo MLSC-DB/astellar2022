@@ -6,9 +6,10 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import setAuthToken from "../../utils/setAuthToken"
 
 export default function Login() {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const [values, setValues] = useState({
     teamname: "",
     password: "",
@@ -45,7 +46,6 @@ export default function Login() {
     const data = new FormData(e.target);
     const payload = JSON.stringify(Object.fromEntries(data.entries()));
     const myObj = JSON.parse(payload);
-
     axios
       .post("http://localhost:3001/api/user/signin/", {
         teamname: myObj.teamname,
@@ -63,8 +63,9 @@ export default function Login() {
           progress: undefined,
         });
         //setting token to localstorage
+        // setAuthToken(result.data.token);
         localStorage.setItem("jwt", result.data.token);
-        history("/profile");
+        navigate("/profile");
       })
       .catch((err) => {
         var msg = "";
