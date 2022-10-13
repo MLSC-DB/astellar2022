@@ -29,7 +29,7 @@ const timelineData = [
   },
   {
     text: "Astellar : The Cryptic Hunt",
-    date: "Oct 15-16 2022",
+    date: "Oct 15th 6PM to Oct 16th 6PM ",
     category: {
       tag: "Online",
       color: "#018f69",

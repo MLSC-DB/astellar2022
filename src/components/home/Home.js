@@ -25,12 +25,12 @@ function Home() {
                 Astellar
               </h1>
               <h1 style={{ fontSize: "1.1rem", fontWeight: "600" }}>
-                15<sup>th</sup> October 2022
+               starts 15<sup>th</sup> October 2022, <span className="purple"> 6PM onwards</span>
               </h1>
               <p className="home-about-body">
                 Welcome Player,
                 <br /> We at MLSC DB introduce you to,
-                <b className="purple"> ASTELLAR</b> , a simple yet challenging
+                <b className="purple"> ASTELLAR</b> , a simple yet challenging 24-hour
                 cryptic hunt.
                 <br />
                 <br />

@@ -25,6 +25,7 @@ import Login from "./components/auth/Login";
 import Profile from "./components/Profile";
 import Admin from "./components/Admin";
 import Level from "./components/play/Level";
+import Leaderboard from "./components/Leaderboard";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -52,11 +53,13 @@ function App() {
 
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
-
+          <Route path="/leaderboard" element={<Leaderboard />} />
           {/* <Route path="/login" element={<Login />} /> */}
           {/* <Route path="/profile" element={<Profile />} /> */}
 
+
           <Route path="/play" element={<Playc />} />
+          
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
