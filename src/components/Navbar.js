@@ -71,12 +71,23 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
+                to="/profile"
+                onClick={() => updateExpanded(false)}
+              >
+                Profile
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
                 to="/play"
                 onClick={() => updateExpanded(false)}
               >
                 Play
               </Nav.Link>
             </Nav.Item>
+
             
             <Nav.Item>
               <Nav.Link

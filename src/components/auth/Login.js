@@ -6,7 +6,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
-import setAuthToken from "../../utils/setAuthToken"
 
 export default function Login() {
   const navigate = useNavigate();
@@ -21,7 +20,7 @@ export default function Login() {
       name: "teamname",
       type: "text",
       required: true,
-      autocomplete:"off",
+      autoComplete:"off",
       pattern: "^[A-Za-z0-9]{3,16}$",
       errorMessage:
         "Teamname should be 3-16 characters and shouldn't include any special character!",
@@ -32,7 +31,7 @@ export default function Login() {
       id: 2,
       name: "password",
       type: "password",
-      autocomplete:"off",
+      autoComplete:"off",
       required: true,
       errorMessage:
         "Password should be atleast 6-16 characters and must include atleast 1 letter, 1 number and 1 special character ",

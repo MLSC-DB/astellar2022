@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
 import Register from "./components/auth/Register";
-import Playc from "./components/play/Playc";
+import Play from "./components/play/Play";
 import TitleSpons from "./components/TitleSpons";
 
 import {
@@ -26,10 +26,10 @@ import Profile from "./components/Profile";
 import Admin from "./components/Admin";
 import Level from "./components/play/Level";
 import Leaderboard from "./components/Leaderboard";
+import SpaceCanvas from "./components/SpaceCanvas";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,19 +47,20 @@ function App() {
         <ScrollToTop />
         <Particle />
         <Image />
-        <TitleSpons/>
+        <TitleSpons />
         <Routes>
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
-          {/* <Route path="/login" element={<Login />} /> */}
-          {/* <Route path="/profile" element={<Profile />} /> */}
-
-
-          <Route path="/play" element={<Playc />} />
           
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
+
+          <Route path="/play" element={<Play />} />
+          <Route path="/play/level" element={<Level />} />
+          <Route path="/spacecanvas" element={<SpaceCanvas />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

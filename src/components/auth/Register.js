@@ -165,7 +165,7 @@ export default function Register() {
     const myObj = JSON.parse(payload);
 
     axios
-      .post("/api/user/signup/", {
+      .post("http://localhost:3001/api/user/signup/", { //check api
         teamname: myObj.teamname,
         u1: myObj.u1,
         u3: myObj.u3,
