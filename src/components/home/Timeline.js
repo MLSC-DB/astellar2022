@@ -5,15 +5,7 @@ import TimelineItem from "./TimelineItem";
 const timelineData = [
   {
     text: "Stargaze : The Treasure Hunt",
-    date: "Oct 14 2022",
-    category: {
-      tag: "Offline",
-      color: "#018f69",
-    },
-  },
-  {
-    text: "BrokerJack : The Crossword Competition",
-    date: "Oct 14 2022",
+    date: "Oct 14th 2022",
     category: {
       tag: "Offline",
       color: "#018f69",
@@ -21,7 +13,7 @@ const timelineData = [
   },
   {
     text: "G4M3 : LAN and Console Gaming Event",
-    date: "Oct 15 2022",
+    date: "Oct 14th 2022",
     category: {
       tag: "Offline",
       color: "#018f69",
@@ -37,6 +29,14 @@ const timelineData = [
     link: {
       url: "https://astellar.xyz/about",
       text: "Details",
+    },
+  },
+  {
+    text: "BrokerJack : The Crossword Competition",
+    date: "Oct 16th 2022",
+    category: {
+      tag: "Offline",
+      color: "#018f69",
     },
   },
 ];
