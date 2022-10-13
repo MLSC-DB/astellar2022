@@ -939,6 +939,7 @@ body {
     margin-top: 7rem;
     height: 5rem;
     width: auto;
+    opacity: 0;
 
   }
 }
@@ -1092,19 +1093,21 @@ body {
   opacity: .7;
 }
 
-.tBox li,.sponsor-tier-item li,.gallery li{
+.tBox li,
+.sponsor-tier-item li,
+.gallery li {
   color: white;
   text-align: left;
   padding: 0.5rem 0.5rem 0.5rem 0;
   font-size: 1.1rem;
 }
 
-.sponsor-section .gallery{
+.sponsor-section .gallery {
   padding: 4rem 1rem 1rem 4rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .sponsor-section .gallery{
+  .sponsor-section .gallery {
     padding: 0 1rem 0 0;
   }
 }
@@ -1115,4 +1118,63 @@ body {
   transform: scale(0.77);
   position: relative;
   z-index: 10;
+}
+
+.spanboard{
+  display: grid;
+  grid-template-columns: 0.5fr 6fr 0.5fr;
+  color: #be50f4;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 0.5fr 6fr 0.5fr;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.team .pos,
+.team .points,
+.team .team-stat {
+  border-radius: 10px;
+  font-size: 1.5rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  background-color: rgba(255, 255, 255, .2);
+  padding: 0.75rem 0 0.75rem 0;
+}
+
+.team .team-stat {
+  margin: 0 10rem 0 10rem;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .spanboard{
+    
+    grid-template-columns: 0.25fr 1.5fr 0.75fr !important;
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+  }
+  .team {
+    grid-template-columns: 0.25fr 1.5fr 0.25fr !important;
+
+  }
+  
+  .team .pos,
+  .team .points,
+  .team .team-stat {
+    font-size: 0.75rem;
+    box-shadow: 0;
+    background-color: rgba(255, 255, 255, .2);
+  }
+  .team .points{
+    margin-right: 1rem;
+    padding: 1rem 1rem;
+  }
+
+  .team .team-stat {
+    margin: 0 2rem 0 2rem;
+  }
 }
