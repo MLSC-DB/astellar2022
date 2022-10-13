@@ -4,11 +4,8 @@ import Space from "../Space";
 import { Col, Container, Row } from "react-bootstrap";
 import useSpaceProgress from "../store";
 const SpaceCanvas = () => {
-  const canvas  = useSpaceProgress((state) => {
-    console.log(state);
-    return state.canvas;
-  });
-
+  const canvas  = useSpaceProgress((state) => state.canvas);
+  console.log("hello");
   return (
     <>
       <Container fluid className="home-section" id="home">
