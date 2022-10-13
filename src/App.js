@@ -6,11 +6,9 @@ import About from "./components/about/About";
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
-import Leaderboard from "./components/Leaderboard";
 import Register from "./components/auth/Register";
-// import Playc from "./components/play/Playc";
+import Playc from "./components/play/Playc";
 import TitleSpons from "./components/TitleSpons";
-import Play from "./components/play/Play";
 
 import {
   BrowserRouter as Router,
@@ -30,6 +28,7 @@ import Level from "./components/play/Level";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,21 +46,17 @@ function App() {
         <ScrollToTop />
         <Particle />
         <Image />
-        <TitleSpons />
+        <TitleSpons/>
         <Routes>
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/register" element={<Register />} />
 
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+          {/* <Route path="/profile" element={<Profile />} /> */}
 
-          {/* <Route path="/play" element={<Playc />} /> */}
-          <Route path="/play" element={<Play />} />
-          <Route path="/play/level" element={<Level />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/play" element={<Playc />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
