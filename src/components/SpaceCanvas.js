@@ -1,11 +1,10 @@
 import React from "react";
 import SpaceElement from "./SpaceElement";
-import Space from "../Space";
+// import Space from "../Space";
 import { Col, Container, Row } from "react-bootstrap";
 import useSpaceProgress from "../store";
 const SpaceCanvas = () => {
-  const canvas  = useSpaceProgress((state) => state.canvas);
-  console.log("hello");
+  const canvas = useSpaceProgress((state) => state.canvas);
   return (
     <>
       <Container fluid className="home-section" id="home">
@@ -29,7 +28,7 @@ const SpaceCanvas = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   style={{ transform: "scale(1.3)" }}
                 >
-                  <g clip-path="url(#clip0_401_2)">
+                  <g clipPath="url(#clip0_401_2)">
                     <rect width="1920" height="1080" fill="#fffff" />
                     {/* <g opacity="0.3" filter="url(#filter0_f_401_2)">
                       <circle cx="-78" cy="1274" r="730" fill="#A22CBF" />
@@ -40,17 +39,19 @@ const SpaceCanvas = () => {
                         fill="#A22CBF"
                       />
                     </g> */}
-                    {canvas.map((ele,idx) => {
-                      console.log(ele);
-                      return(
-                        <SpaceElement key={idx}
-                        visibility={ele.visible}
-                        neighbours={ele.neighbours}
-                        element={ele.element}
-                        quesNum={ele?.qNo}
-                      />
-                      )
-})}
+                    {canvas.map((ele, idx) => {
+                      return (
+                        <SpaceElement
+                          key={idx}
+                          name={ele.name}
+                          visibility={ele.visible}
+                          neighbours={ele.neighbours}
+                          element={ele.element}
+                          quesNum={ele.qNo}
+                          solved={ele.solved}
+                        />
+                      );
+                    })}
                   </g>
                   <defs>
                     <filter
@@ -60,9 +61,9 @@ const SpaceCanvas = () => {
                       width="2260"
                       height="2260"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -81,9 +82,9 @@ const SpaceCanvas = () => {
                       width="1624"
                       height="1624"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -102,9 +103,9 @@ const SpaceCanvas = () => {
                       width="1519"
                       height="77"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feBlend
                         mode="normal"
                         in="SourceGraphic"
@@ -123,9 +124,9 @@ const SpaceCanvas = () => {
                       width="166.171"
                       height="95.762"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -149,9 +150,9 @@ const SpaceCanvas = () => {
                       width="154.242"
                       height="153.344"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -175,9 +176,9 @@ const SpaceCanvas = () => {
                       width="196.113"
                       height="104.572"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -201,9 +202,9 @@ const SpaceCanvas = () => {
                       width="107.115"
                       height="210.767"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -227,9 +228,9 @@ const SpaceCanvas = () => {
                       width="68.5249"
                       height="208.507"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -253,9 +254,9 @@ const SpaceCanvas = () => {
                       width="177.585"
                       height="70.1739"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -279,9 +280,9 @@ const SpaceCanvas = () => {
                       width="105.688"
                       height="168.412"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -305,9 +306,9 @@ const SpaceCanvas = () => {
                       width="57.9766"
                       height="160.392"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -331,9 +332,9 @@ const SpaceCanvas = () => {
                       width="194.12"
                       height="102.492"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -357,9 +358,9 @@ const SpaceCanvas = () => {
                       width="153.677"
                       height="110.122"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -383,9 +384,9 @@ const SpaceCanvas = () => {
                       width="49.9951"
                       height="169.26"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -409,9 +410,9 @@ const SpaceCanvas = () => {
                       width="132.622"
                       height="79.0366"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -435,9 +436,9 @@ const SpaceCanvas = () => {
                       width="132.718"
                       height="106"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -461,9 +462,9 @@ const SpaceCanvas = () => {
                       width="44.0005"
                       height="162.062"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -487,9 +488,9 @@ const SpaceCanvas = () => {
                       width="44.0005"
                       height="162.062"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -513,9 +514,9 @@ const SpaceCanvas = () => {
                       width="120.88"
                       height="105.878"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -539,9 +540,9 @@ const SpaceCanvas = () => {
                       width="114.951"
                       height="104.81"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -565,9 +566,9 @@ const SpaceCanvas = () => {
                       width="193.04"
                       height="45.0169"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -591,9 +592,9 @@ const SpaceCanvas = () => {
                       width="104.411"
                       height="125.497"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -617,9 +618,9 @@ const SpaceCanvas = () => {
                       width="118.548"
                       height="88.9639"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -643,9 +644,9 @@ const SpaceCanvas = () => {
                       width="61.9053"
                       height="114.375"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -669,9 +670,9 @@ const SpaceCanvas = () => {
                       width="198.23"
                       height="113.336"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -695,9 +696,9 @@ const SpaceCanvas = () => {
                       width="162.984"
                       height="85.194"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -721,9 +722,9 @@ const SpaceCanvas = () => {
                       width="77.8652"
                       height="153.848"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -747,9 +748,9 @@ const SpaceCanvas = () => {
                       width="241.591"
                       height="83.2842"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -773,9 +774,9 @@ const SpaceCanvas = () => {
                       width="207.202"
                       height="115.366"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -799,9 +800,9 @@ const SpaceCanvas = () => {
                       width="187.237"
                       height="204.378"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -825,9 +826,9 @@ const SpaceCanvas = () => {
                       width="57.9727"
                       height="150.34"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -851,9 +852,9 @@ const SpaceCanvas = () => {
                       width="189.841"
                       height="210.854"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -877,9 +878,9 @@ const SpaceCanvas = () => {
                       width="150.917"
                       height="78.1565"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -903,9 +904,9 @@ const SpaceCanvas = () => {
                       width="109.573"
                       height="209.983"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -929,9 +930,9 @@ const SpaceCanvas = () => {
                       width="174.555"
                       height="68.1625"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -955,9 +956,9 @@ const SpaceCanvas = () => {
                       width="90.7285"
                       height="230.209"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -981,9 +982,9 @@ const SpaceCanvas = () => {
                       width="189.559"
                       height="71.1875"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -1007,9 +1008,9 @@ const SpaceCanvas = () => {
                       width="282.118"
                       height="139.607"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -1033,9 +1034,9 @@ const SpaceCanvas = () => {
                       width="319.068"
                       height="148.803"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -1059,9 +1060,9 @@ const SpaceCanvas = () => {
                       width="197.13"
                       height="198.441"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -1085,9 +1086,9 @@ const SpaceCanvas = () => {
                       width="231.058"
                       height="114.416"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"
@@ -1111,9 +1112,9 @@ const SpaceCanvas = () => {
                       width="248.969"
                       height="113.839"
                       filterUnits="userSpaceOnUse"
-                      color-interpolation-filters="sRGB"
+                      colorInterpolationFilters="sRGB"
                     >
-                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
                       <feGaussianBlur
                         in="BackgroundImageFix"
                         stdDeviation="10"

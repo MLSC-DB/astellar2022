@@ -4,6 +4,7 @@ import { Row, Button, Container } from "react-bootstrap";
 import axios from "axios";
 import { decodeToken } from "react-jwt";
 import { useCallback } from "react";
+import SpaceCanvas from "./SpaceCanvas";
 
 const Play = () => {
   const qno = 1;
@@ -38,7 +39,6 @@ const Play = () => {
   React.useEffect(() => {
     async function getData() {
       const token = localStorage.getItem("jwt");
-      // console.log(token);
       if (token) {
         const team = decodeToken(token);
         if (!team) {
@@ -46,7 +46,7 @@ const Play = () => {
           navigate("/login");
         } else {
           const res = await populateProfile();
-          console.log("Here")
+          console.log("Here");
           setData(res.data);
           navigate("/play");
         }
@@ -59,44 +59,14 @@ const Play = () => {
     setLoading(true);
     getData();
   }, [navigate, populateProfile]);
-  const buttonStyles = {
-    display: "flex",
-    fontSize: "1.5rem",
-    width: "auto",
-    height: "auto",
-    background: "none",
-    marginTop: "3rem",
-    marginBottom: "3rem",
-    justifyContent: "center",
-    align: "center",
-  };
+
   if (loading && !data) return <h2>loading</h2>;
   return (
     <>
       <Container fluid className="sponsor-section" id="about">
         <Container>
           <Row>
-            <div className="form-gallery">
-              <style type="text/css">
-                {`
-    .btn-outline-light:hover{
-      color: white;}
-      .btn-outline-light:active{
-        color:green;
-      }    
-    `}
-              </style>
-              <Button
-                variant="outline-light"
-                type="submit"
-                onClick={() => {
-                  navigate("/play/level", { state: { qno } });
-                }}
-                style={buttonStyles}
-              >
-                Login !
-              </Button>{" "}
-            </div>
+            <SpaceCanvas />
           </Row>
         </Container>
       </Container>

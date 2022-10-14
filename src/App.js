@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
 import Register from "./components/auth/Register";
-import Play from "./components/play/Play";
+import Play from "./components/Play";
 import TitleSpons from "./components/TitleSpons";
 
 import {
@@ -24,7 +24,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/auth/Login";
 import Profile from "./components/Profile";
 import Admin from "./components/Admin";
-import Level from "./components/play/Level";
+import Level from "./components/Level";
 import Leaderboard from "./components/Leaderboard";
 import SpaceCanvas from "./components/SpaceCanvas";
 

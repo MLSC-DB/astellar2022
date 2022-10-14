@@ -28,7 +28,6 @@ const Profile = () => {
       data: {
         u1: res.data["u1"].toUpperCase(),
         points: res.data["points"],
-        atLevel: res.data["atlevel"],
         teamName: res.data["teamname"].toUpperCase(),
       },
     };
@@ -131,20 +130,6 @@ const Profile = () => {
                 </span>
               </span>
               <span style={{ padding: "2rem 0 2rem 0" }}>
-                <span className="purple" style={{ fontSize: "1.1rem" }}>
-                  {" "}
-                  QUESTIONS SOLVED :{" "}
-                </span>
-                <span
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "white",
-                    fontWeight: "600",
-                    paddingLeft: "2rem",
-                  }}
-                >
-                  {data.atLevel} /35
-                </span>
               </span>
             </div>
           </div>

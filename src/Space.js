@@ -5,7 +5,7 @@ var planetEarth = {
   solved: false,
   qNo: 0,
   element: (
-    <g clip-path="url(#clip1_401_2)" id="earth">
+    <g clipPath="url(#clip1_401_2)" id="earth">
       <path
         d="M830.838 576.249C830.838 578.486 830.348 580.612 829.476 582.517C829.001 582.193 828.542 581.833 828.114 581.486C827.13 580.699 826.431 579.636 825.845 578.032C825.251 576.404 824.93 575.139 825.17 573.87C825.32 573.064 825.953 572.448 826.686 571.736C827.045 571.389 827.411 571.033 827.763 570.618C828.222 570.073 828.523 569.373 828.804 568.682C830.093 570.899 830.838 573.487 830.838 576.249Z"
         fill="#94C949"
@@ -45,7 +45,7 @@ var planetGreyPlanet1 = {
   solved: false,
   qNo: 20,
   element: (
-    <g clip-path="url(#clip2_401_2)" id="grey-planet1">
+    <g clipPath="url(#clip2_401_2)" id="grey-planet1">
       <path
         d="M489.06 576.645C481.778 576.645 475.854 582.564 475.854 589.84C475.854 597.116 481.778 603.035 489.06 603.035C496.342 603.035 502.266 597.116 502.266 589.84C502.266 582.564 496.342 576.645 489.06 576.645Z"
         fill="#8C6E51"
@@ -281,7 +281,7 @@ var planetBrokenEarth = {
   solved: false,
   qNo: 33,
   element: (
-    <g clip-path="url(#clip3_401_2)" id="broken-earth">
+    <g clipPath="url(#clip3_401_2)" id="broken-earth">
       <path
         d="M733.517 894.886C742.072 894.886 749.007 887.956 749.007 879.409C749.007 870.861 742.072 863.932 733.517 863.932C724.962 863.932 718.027 870.861 718.027 879.409C718.027 887.956 724.962 894.886 733.517 894.886Z"
         fill="#FFFCE6"
@@ -437,7 +437,7 @@ var planetYellowPlanet1 = {
   solved: false,
   qNo: 11,
   element: (
-    <g clip-path="url(#clip4_401_2)" id="yellow-planet1">
+    <g clipPath="url(#clip4_401_2)" id="yellow-planet1">
       <path
         d="M1271.87 825.106L1269.24 829.7V832.981L1274.49 828.387L1271.87 825.106Z"
         fill="#FD9808"
@@ -561,7 +561,7 @@ var planetBrokenEarth2 = {
   solved: false,
   qNo: 23,
   element: (
-    <g clip-path="url(#clip5_401_2)" id="broken-earth2">
+    <g clipPath="url(#clip5_401_2)" id="broken-earth2">
       <path
         d="M1604.17 758.033C1600.94 758.033 1598.33 755.421 1598.33 752.198C1598.33 751.159 1598.6 750.185 1599.08 749.339C1597.59 748.613 1595.96 748.107 1594.23 747.876C1585.58 746.724 1577.64 752.797 1576.48 761.441C1575.33 770.085 1581.41 778.026 1590.06 779.178C1598.71 780.33 1606.66 774.257 1607.81 765.613C1608.19 762.735 1607.77 759.936 1606.72 757.438C1605.95 757.816 1605.09 758.033 1604.17 758.033Z"
         fill="#285680"
@@ -713,7 +713,7 @@ var planetEarth2 = {
   solved: false,
   qNo: 6,
   element: (
-    <g clip-path="url(#clip6_401_2)" id="earth2">
+    <g clipPath="url(#clip6_401_2)" id="earth2">
       <path
         d="M900.582 621.145C900.582 621.898 900.529 622.639 900.428 623.364C899.787 627.908 897.206 631.829 893.549 634.265C892.68 634.845 891.749 635.341 890.769 635.74C888.965 636.477 886.994 636.889 884.927 636.904C884.888 636.904 884.849 636.904 884.81 636.904C882.985 636.904 881.233 636.595 879.603 636.025C876.005 634.769 873.002 632.246 871.129 628.992C869.798 626.681 869.037 624.001 869.037 621.145C869.037 619.451 869.305 617.819 869.8 616.289C870.804 613.186 872.747 610.504 875.293 608.576C876.131 607.941 877.035 607.388 877.993 606.929C880.056 605.939 882.369 605.385 884.81 605.385C884.854 605.385 884.898 605.385 884.942 605.386C886.922 605.401 888.816 605.782 890.558 606.464C896.158 608.656 900.2 613.953 900.557 620.236C900.574 620.537 900.582 620.839 900.582 621.145Z"
         fill="#4A7DBA"
@@ -769,7 +769,7 @@ var planetYellowPlanet2 = {
   solved: false,
   qNo: 5,
   element: (
-    <g clip-path="url(#clip7_401_2)" id="yellow-planet2">
+    <g clipPath="url(#clip7_401_2)" id="yellow-planet2">
       <path
         d="M882.567 481.81C882.567 483.884 880.869 485.58 878.794 485.58C876.719 485.58 875.021 483.884 875.021 481.81C875.021 479.737 876.719 478.04 878.794 478.04C880.869 478.04 882.567 479.737 882.567 481.81Z"
         fill="#15A143"
@@ -889,7 +889,7 @@ var planetYellowSaturn = {
   solved: false,
   qNo: 15,
   element: (
-    <g clip-path="url(#clip8_401_2)" id="yellow-saturn">
+    <g clipPath="url(#clip8_401_2)" id="yellow-saturn">
       <path
         d="M445.902 245.241C445.423 244.409 444.451 243.987 443.013 243.987C443.003 243.987 442.992 243.987 442.982 243.987C442.036 243.991 440.871 244.174 439.513 244.528L439.825 245.69L441.006 246.251C443.271 245.783 444.071 246.11 444.15 246.247C444.229 246.385 444.109 247.24 442.566 248.96C442.874 249.667 443.121 250.387 443.305 251.116C444.298 250.119 445.042 249.203 445.521 248.386C446.255 247.135 446.383 246.077 445.902 245.241Z"
         fill="#003DA8"
@@ -1025,7 +1025,7 @@ var planetMisc1 = {
   solved: false,
   qNo: 27,
   element: (
-    <g clip-path="url(#clip9_401_2)" id="misc-1">
+    <g clipPath="url(#clip9_401_2)" id="misc-1">
       <path
         d="M624.274 574.002C631.912 574.002 638.104 567.815 638.104 560.183C638.104 552.551 631.912 546.365 624.274 546.365C616.636 546.365 610.444 552.551 610.444 560.183C610.444 567.815 616.636 574.002 624.274 574.002Z"
         fill="#5A8BB0"
@@ -1081,7 +1081,7 @@ var planetMisc2 = {
   solved: false,
   qNo: 3,
   element: (
-    <g clip-path="url(#clip10_401_2)" id="misc-2">
+    <g clipPath="url(#clip10_401_2)" id="misc-2">
       <path
         d="M1154.96 621.968C1154.96 630.756 1162.11 637.895 1170.9 637.895V606.042C1162.11 606.042 1154.96 613.181 1154.96 621.968Z"
         fill="#FFDD09"
@@ -1149,7 +1149,7 @@ var planetOrangeSaturn = {
   solved: false,
   qNo: 2,
   element: (
-    <g clip-path="url(#clip11_401_2)" id="orange-saturn">
+    <g clipPath="url(#clip11_401_2)" id="orange-saturn">
       <path
         d="M794.941 321.313C803.611 321.313 810.639 314.29 810.639 305.628C810.639 296.965 803.611 289.943 794.941 289.943C786.272 289.943 779.244 296.965 779.244 305.628C779.244 314.29 786.272 321.313 794.941 321.313Z"
         fill="#FF965F"
@@ -1273,7 +1273,7 @@ var planetYellowSaturn2 = {
   solved: false,
   qNo: 18,
   element: (
-    <g clip-path="url(#clip27_401_2)" id="yellow-saturn2">
+    <g clipPath="url(#clip27_401_2)" id="yellow-saturn2">
       <path
         d="M855.609 844.238C864.6 844.238 871.89 836.955 871.89 827.97C871.89 818.986 864.6 811.703 855.609 811.703C846.617 811.703 839.328 818.986 839.328 827.97C839.328 836.955 846.617 844.238 855.609 844.238Z"
         fill="#FFD000"
@@ -1317,7 +1317,7 @@ var planetMisc3 = {
   solved: false,
   qNo: 26,
   element: (
-    <g clip-path="url(#clip12_401_2)" id="misc-3">
+    <g clipPath="url(#clip12_401_2)" id="misc-3">
       <path
         d="M714.967 388.646C722.605 388.646 728.797 382.459 728.797 374.827C728.797 367.195 722.605 361.009 714.967 361.009C707.329 361.009 701.137 367.195 701.137 374.827C701.137 382.459 707.329 388.646 714.967 388.646Z"
         fill="#5A8BB0"
@@ -1367,7 +1367,7 @@ var planetRedPlanet2 = {
   solved: false,
   qNo: 30,
   element: (
-    <g clip-path="url(#clip13_401_2)" id="red-planet2">
+    <g clipPath="url(#clip13_401_2)" id="red-planet2">
       <path
         d="M869.144 358.2C861.332 358.2 854.977 364.55 854.977 372.356C854.977 380.162 861.332 386.512 869.144 386.512C876.957 386.512 883.312 380.162 883.312 372.356C883.312 364.55 876.957 358.2 869.144 358.2Z"
         fill="#FF4D30"
@@ -1430,12 +1430,12 @@ var planetMisc4 = {
   solved: false,
   qNo: 28,
   element: (
-    <g clip-path="url(#clip14_401_2)" id="misc-4">
+    <g clipPath="url(#clip14_401_2)" id="misc-4">
       <path
         d="M576.5 329.713C584.784 329.713 591.5 322.94 591.5 314.584C591.5 306.229 584.784 299.456 576.5 299.456C568.216 299.456 561.5 306.229 561.5 314.584C561.5 322.94 568.216 329.713 576.5 329.713Z"
         fill="white"
         stroke="black"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
       />
       <path
         d="M578.103 332.813C587.21 332.813 594.593 325.437 594.593 316.337C594.593 307.238 587.21 299.861 578.103 299.861C568.996 299.861 561.614 307.238 561.614 316.337C561.614 325.437 568.996 332.813 578.103 332.813Z"
@@ -1584,7 +1584,7 @@ var planetMisc5 = {
   solved: false,
   qNo: 29,
   element: (
-    <g clip-path="url(#clip15_401_2)" id="misc-5">
+    <g clipPath="url(#clip15_401_2)" id="misc-5">
       <path
         d="M983.747 548.464C991.386 548.464 997.577 542.277 997.577 534.645C997.577 527.013 991.386 520.827 983.747 520.827C976.109 520.827 969.917 527.013 969.917 534.645C969.917 542.277 976.109 548.464 983.747 548.464Z"
         fill="#5A8BB0"
@@ -1632,7 +1632,7 @@ var planetGreySaturn = {
   solved: false,
   qNo: 17,
   element: (
-    <g clip-path="url(#clip16_401_2)" id="grey-saturn">
+    <g clipPath="url(#clip16_401_2)" id="grey-saturn">
       <path
         d="M1043.4 410.323C1046.56 410.323 1049.13 407.757 1049.13 404.592C1049.13 401.427 1046.56 398.861 1043.4 398.861C1040.23 398.861 1037.66 401.427 1037.66 404.592C1037.66 407.757 1040.23 410.323 1043.4 410.323Z"
         fill="#E5E5E5"
@@ -1676,7 +1676,7 @@ var planetSpikySun = {
   solved: false,
   qNo: 31,
   element: (
-    <g clip-path="url(#clip17_401_2)" id="spiky-sun">
+    <g clipPath="url(#clip17_401_2)" id="spiky-sun">
       <path
         d="M528.9 769.841C528.9 778.404 521.952 785.346 513.382 785.346C504.812 785.346 497.864 778.404 497.864 769.841C497.864 761.278 504.812 754.336 513.382 754.336C521.952 754.336 528.9 761.278 528.9 769.841Z"
         fill="#FFF48B"
@@ -1712,7 +1712,7 @@ var planetYellowPlanet3 = {
   solved: false,
   qNo: 1,
   element: (
-    <g clip-path="url(#clip18_401_2)" id="yellow-planet3">
+    <g clipPath="url(#clip18_401_2)" id="yellow-planet3">
       <path
         d="M753.673 724.146C755.365 725.835 756.724 727.857 757.64 730.107C758.492 732.2 758.961 734.49 758.961 736.889C758.961 738.187 758.823 739.454 758.562 740.673C757.81 744.19 756.03 747.325 753.551 749.751C752.354 750.924 750.993 751.932 749.506 752.735C746.957 754.114 744.039 754.897 740.938 754.897C740.636 754.897 740.336 754.89 740.038 754.875C734.412 754.598 729.465 751.744 726.353 747.47C724.191 744.499 722.916 740.842 722.916 736.889C722.916 736.692 722.919 736.495 722.925 736.299C723.055 732.259 724.518 728.555 726.887 725.612C729.919 721.845 734.438 719.322 739.554 718.934C740.011 718.899 740.472 718.881 740.938 718.881C744.995 718.881 748.738 720.22 751.75 722.48C752.43 722.99 753.073 723.547 753.673 724.146Z"
         fill="#FCBC1D"
@@ -1792,7 +1792,7 @@ var planetYellowPlanet4 = {
   solved: false,
   qNo: 12,
   element: (
-    <g clip-path="url(#clip19_401_2)" id="yellow-planet4">
+    <g clipPath="url(#clip19_401_2)" id="yellow-planet4">
       <path
         d="M420.016 414.75C430.582 414.75 439.147 406.192 439.147 395.635C439.147 385.078 430.582 376.52 420.016 376.52C409.451 376.52 400.886 385.078 400.886 395.635C400.886 406.192 409.451 414.75 420.016 414.75Z"
         fill="#FFFE9F"
@@ -1898,7 +1898,7 @@ var planetVortex = {
   solved: false,
   qNo: 4,
   element: (
-    <g clip-path="url(#clip20_401_2)" id="vortex">
+    <g clipPath="url(#clip20_401_2)" id="vortex">
       <path
         d="M1189.04 514.59C1198.45 514.59 1206.08 506.97 1206.08 497.57C1206.08 488.17 1198.45 480.55 1189.04 480.55C1179.64 480.55 1172.01 488.17 1172.01 497.57C1172.01 506.97 1179.64 514.59 1189.04 514.59Z"
         fill="#4A7984"
@@ -2106,7 +2106,7 @@ var planetYellowPlanet5 = {
   solved: false,
   qNo: 10,
   element: (
-    <g clip-path="url(#clip21_401_2)" id="yellow-planet5">
+    <g clipPath="url(#clip21_401_2)" id="yellow-planet5">
       <path
         d="M1592.21 548.65C1601.32 548.65 1608.7 541.273 1608.7 532.174C1608.7 523.074 1601.32 515.698 1592.21 515.698C1583.11 515.698 1575.72 523.074 1575.72 532.174C1575.72 541.273 1583.11 548.65 1592.21 548.65Z"
         fill="#F9BA48"
@@ -2142,7 +2142,7 @@ var planetMisc6 = {
   solved: false,
   qNo: 19,
   element: (
-    <g clip-path="url(#clip22_401_2)" id="misc-6">
+    <g clipPath="url(#clip22_401_2)" id="misc-6">
       <path
         d="M551.026 416.504C551.915 415.854 553.174 415.922 553.975 416.723C554.859 417.607 554.859 419.053 553.975 419.937L549.954 423.954C549.069 424.838 549.069 426.284 549.954 427.168C550.839 428.052 552.286 428.052 553.171 427.168L560.006 420.338C560.891 419.454 562.338 419.454 563.223 420.338C564.107 421.222 564.107 422.668 563.223 423.552L553.975 432.792C553.09 433.676 553.09 435.122 553.975 436.006C554.859 436.89 556.307 436.89 557.191 436.006L568.851 424.356C569.736 423.472 571.183 423.472 572.068 424.356C572.952 425.24 572.952 426.686 572.068 427.57L564.027 435.604C563.142 436.488 563.142 437.934 564.027 438.818C564.911 439.702 566.358 439.702 567.243 438.818L570.058 436.006C570.942 435.122 572.39 435.122 573.274 436.006C574.075 436.806 574.143 438.064 573.493 438.952C579.074 432.705 578.872 423.12 572.872 417.124C566.871 411.129 557.278 410.928 551.026 416.504Z"
         fill="#88C057"
@@ -2186,7 +2186,7 @@ var planetEndGoal = {
   solved: false,
   qNo: 13,
   element: (
-    <g clip-path="url(#clip23_401_2)" id="end-goal">
+    <g clipPath="url(#clip23_401_2)" id="end-goal">
       <path
         d="M1035.28 672.451C1032.2 677.143 1026.88 680.242 1020.85 680.242C1011.33 680.242 1003.61 672.529 1003.61 663.015C1003.61 653.502 1011.33 645.789 1020.85 645.789C1030.37 645.789 1038.09 653.502 1038.09 663.015C1038.09 665.272 1037.65 667.427 1036.86 669.403"
         fill="#578CAD"
@@ -2270,7 +2270,7 @@ var planetVortex2 = {
   visible: false,
   qNo: 25,
   element: (
-    <g clip-path="url(#clip24_401_2)" id="vortex-2">
+    <g clipPath="url(#clip24_401_2)" id="vortex-2">
       <path
         d="M1351.47 521.707C1352.49 521.707 1354.21 523.17 1355.75 526.441C1357.65 530.48 1358.74 536.173 1358.74 542.06C1358.74 547.946 1357.65 553.638 1355.75 557.678C1354.21 560.948 1352.49 562.412 1351.47 562.412C1350.44 562.412 1348.72 560.948 1347.18 557.678C1345.28 553.638 1344.19 547.946 1344.19 542.059C1344.19 536.173 1345.28 530.48 1347.18 526.441C1348.72 523.17 1350.44 521.707 1351.47 521.707ZM1351.47 517.345C1345.04 517.345 1339.83 528.41 1339.83 542.059C1339.83 555.709 1345.04 566.774 1351.47 566.774C1357.89 566.774 1363.1 555.709 1363.1 542.06C1363.1 528.41 1357.89 517.345 1351.47 517.345Z"
         fill="#FF9811"
@@ -2314,7 +2314,7 @@ var planetMisc7 = {
   solved: false,
   qNo: 14,
   element: (
-    <g clip-path="url(#clip25_401_2)" id="misc-7">
+    <g clipPath="url(#clip25_401_2)" id="misc-7">
       <path
         d="M1336.61 673.868C1347.98 673.868 1357.2 664.655 1357.2 653.29C1357.2 641.925 1347.98 632.711 1336.61 632.711C1325.23 632.711 1316.01 641.925 1316.01 653.29C1316.01 664.655 1325.23 673.868 1336.61 673.868Z"
         fill="#063F66"
@@ -2514,7 +2514,7 @@ var planetBluePlanet = {
   solved: false,
   qNo: 8,
   element: (
-    <g clip-path="url(#clip26_401_2)" id="blue-planet">
+    <g clipPath="url(#clip26_401_2)" id="blue-planet">
       <path
         d="M1487.5 590.021C1498.53 590.021 1507.47 581.088 1507.47 570.069C1507.47 559.05 1498.53 550.118 1487.5 550.118C1476.48 550.118 1467.54 559.05 1467.54 570.069C1467.54 581.088 1476.48 590.021 1487.5 590.021Z"
         fill="#77AAD4"
@@ -2629,7 +2629,7 @@ var planetBrownPlanet = {
   solved: false,
   qNo: 21,
   element: (
-    <g clip-path="url(#clip28_401_2)" id="brown-planet">
+    <g clipPath="url(#clip28_401_2)" id="brown-planet">
       <path
         d="M1062.08 740.66C1072.04 740.66 1080.15 748.761 1080.15 758.722C1080.15 768.679 1072.04 776.78 1062.08 776.78C1052.11 776.78 1044 768.679 1044 758.722C1044 748.761 1052.11 740.66 1062.08 740.66ZM1075.82 760.939C1075.82 758.959 1074.21 757.349 1072.22 757.349C1070.24 757.349 1068.63 758.959 1068.63 760.939C1068.63 762.92 1070.24 764.53 1072.22 764.53C1074.21 764.53 1075.82 762.92 1075.82 760.939ZM1070.53 768.963C1070.53 766.694 1068.68 764.848 1066.41 764.848C1064.14 764.848 1062.29 766.694 1062.29 768.963C1062.29 771.238 1064.14 773.084 1066.41 773.084C1068.68 773.084 1070.53 771.238 1070.53 768.963ZM1059.77 745.185C1060.14 744.814 1060.13 744.207 1059.76 743.831C1059.37 743.455 1058.77 743.45 1058.4 743.821C1058.03 744.188 1058.03 744.795 1058.41 745.175C1058.79 745.551 1059.39 745.556 1059.77 745.185ZM1057.21 771.426C1057.85 770.785 1057.84 769.739 1057.19 769.089C1056.54 768.438 1055.49 768.428 1054.85 769.069C1054.21 769.706 1054.22 770.751 1054.87 771.407C1055.52 772.057 1056.57 772.062 1057.21 771.426ZM1054.58 748.472C1055.05 747.995 1055.04 747.209 1054.56 746.727C1054.07 746.24 1053.29 746.231 1052.81 746.708C1052.33 747.19 1052.34 747.971 1052.82 748.457C1053.31 748.944 1054.09 748.949 1054.58 748.472Z"
         fill="#D6AA83"
@@ -2898,7 +2898,7 @@ var planetSaturn = {
   solved: false,
   qNo: 7,
   element: (
-    <g clip-path="url(#clip29_401_2)" id="saturn">
+    <g clipPath="url(#clip29_401_2)" id="saturn">
       <path
         d="M872.891 702.236C883.385 704.22 890.638 708.47 890.638 713.391C890.638 718.314 883.385 722.564 872.891 724.548C868.835 725.317 864.295 725.746 859.5 725.746C854.707 725.746 850.167 725.317 846.111 724.548C835.616 722.564 828.362 718.314 828.362 713.391C828.362 708.47 835.616 704.22 846.111 702.236C844.472 704.2 843.257 706.532 842.609 709.088C839.884 710.283 838.266 711.774 838.266 713.391C838.266 715.009 839.884 716.501 842.609 717.696C846.489 719.394 852.612 720.491 859.5 720.491C866.39 720.491 872.512 719.394 876.393 717.696C879.117 716.501 880.736 715.009 880.736 713.391C880.736 711.774 879.117 710.283 876.393 709.088C875.745 706.532 874.53 704.2 872.891 702.236Z"
         fill="#FF7124"
@@ -3047,9 +3047,9 @@ var p1 = {
       <path
         d="M858 827L733 880"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3064,9 +3064,9 @@ var p2 = {
       <path
         d="M375.282 698.582L487.411 587.369"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3081,9 +3081,9 @@ var p3 = {
       <path
         d="M487.411 586.545L332.409 524.76"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3098,9 +3098,9 @@ var p4 = {
       <path
         d="M485.762 571.716L421.452 402.013"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3115,9 +3115,9 @@ var p5 = {
       <path
         d="M487.411 586.545L512.97 754.601"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3132,9 +3132,9 @@ var p6 = {
       <path
         d="M487.5 586.899L624.5 559.667"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3149,9 +3149,9 @@ var p7 = {
       <path
         d="M624.5 559.667L561.5 432.587"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3166,9 +3166,9 @@ var p8 = {
       <path
         d="M561.5 434.604L576.5 314.584"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3183,9 +3183,9 @@ var p9 = {
       <path
         d="M576.5 313.576L423.47 253.878"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3200,9 +3200,9 @@ var p10 = {
       <path
         d="M426.399 254.552L538.529 187"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3217,9 +3217,9 @@ var p11 = {
       <path
         d="M624.5 559.667L631.5 688.764"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3234,9 +3234,9 @@ var p12 = {
       <path
         d="M631.695 688.697L723.212 724.944"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3251,9 +3251,9 @@ var p13 = {
       <path
         d="M624.5 559.667L715.5 496.127"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3268,9 +3268,9 @@ var p14 = {
       <path
         d="M715.5 496.127L716.501 374.09"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3285,9 +3285,9 @@ var p15 = {
       <path
         d="M868.5 494.614L869.501 372.577"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3302,9 +3302,9 @@ var p16 = {
       <path
         d="M716.5 374.09L795.5 310.55"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3319,9 +3319,9 @@ var p17 = {
       <path
         d="M796.5 309.541L869.5 372.073"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3336,9 +3336,9 @@ var p18 = {
       <path
         d="M715.5 496.127L868.5 494.11"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3353,9 +3353,9 @@ var p19 = {
       <path
         d="M806.5 577.821L868.5 494.11"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3370,9 +3370,9 @@ var p20 = {
       <path
         d="M883.5 621.19L806.5 574.796"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3387,9 +3387,9 @@ var p21 = {
       <path
         d="M883.5 621.19L864.5 694.816"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3404,9 +3404,9 @@ var p22 = {
       <path
         d="M1025.5 423.51L868.5 494.11"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3421,9 +3421,9 @@ var p23 = {
       <path
         d="M990.5 536.47L868.5 494.11"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3438,9 +3438,9 @@ var p24 = {
       <path
         d="M990.5 536.47L1025.5 423.51"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3455,9 +3455,9 @@ var p25 = {
       <path
         d="M990.5 536.47L1191.5 496.127"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3472,9 +3472,9 @@ var p26 = {
       <path
         d="M1025.5 423.51L1191.5 496.127"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3489,9 +3489,9 @@ var p27 = {
       <path
         d="M1191.5 496.127L1336.5 658.507"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3506,9 +3506,9 @@ var p28 = {
       <path
         d="M1336.5 656.49L1351.5 546.556"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3523,9 +3523,9 @@ var p29 = {
       <path
         d="M1448.75 367.413L1596.34 536.293"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3540,9 +3540,9 @@ var p30 = {
       <path
         d="M1596.5 536.47L1486.5 571.77"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3557,9 +3557,9 @@ var p31 = {
       <path
         d="M1351.46 546.179L1418.25 377.299"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3574,9 +3574,9 @@ var p32 = {
       <path
         d="M1351.5 546.556L1485.5 571.77"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3591,9 +3591,9 @@ var p33 = {
       <path
         d="M1486.68 571.716L1438.86 382.242"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3608,9 +3608,9 @@ var p34 = {
       <path
         d="M1187.5 628.25L1336.5 656.49"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3625,9 +3625,9 @@ var p35 = {
       <path
         d="M1336.5 658.507L1577.5 755.33"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3642,9 +3642,9 @@ var p36 = {
       <path
         d="M1336 659L1058 765"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3659,9 +3659,9 @@ var p37 = {
       <path
         d="M1004.5 678.679L849.5 835.007"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3676,9 +3676,9 @@ var p38 = {
       <path
         d="M1056.5 762.39L1246.5 833.999"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"planetMiscEarth2
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"planetMiscEarth2
+        strokeDasharray="10 10"
       />
     </g>
   ),
@@ -3693,15 +3693,15 @@ var p39 = {
       <path
         d="M1064 759L856 830"
         stroke="#9626BE"
-        stroke-width="3"
-        stroke-miterlimit="10"
-        stroke-dasharray="10 10"
+        strokeWidth="3"
+        strokeMiterlimit="10"
+        strokeDasharray="10 10"
       />
     </g>
   ),
 };
 
-planetEarth.neighbours=[planetYellowPlanet2,planetEarth2,p19,p20]
+
 
 const Space = [planetEarth, planetGreyPlanet1, planetRedPlanet1, planetBrokenEarth, planetYellowPlanet1, planetBrokenEarth2, planetEarth2, 
     planetYellowPlanet2, planetYellowSaturn, planetGreyPlanet2, planetMisc1, planetMisc2, planetOrangeSaturn, planetYellowSaturn2, 
