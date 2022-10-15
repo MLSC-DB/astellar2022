@@ -32,7 +32,7 @@ const renderer = ({ days, hours, minutes, seconds }) => {
 };
 
 const CountdownContainer = () => {
-  return <Countdown date={1665923400000} renderer={renderer} />;
+  return <Countdown date={1665837000000} renderer={renderer} />;
 };
 
 export default CountdownContainer;
