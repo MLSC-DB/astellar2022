@@ -22,7 +22,7 @@ const Play = () => {
   //getting the questions
   const [data, setData] = React.useState({});
   const populateQues = React.useCallback(async (quesNum) => {
-    const res = await axios.get("http://localhost:3001/api/getCurrentLevel", {
+    const res = await axios.get("/api/getCurrentLevel", {
       headers: {
         "astellar-headers": localStorage.getItem("jwt"),
       },

@@ -9,6 +9,7 @@ import Image from "./Image";
 import Register from "./components/auth/Register";
 import Play from "./components/play/Play";
 // import Playc from "./components/play/Playc";
+import Hehe from "./components/about/Hehe";
 import TitleSpons from "./components/TitleSpons";
 
 import {
@@ -29,7 +30,6 @@ import Leaderboard from "./components/Leaderboard";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,7 +47,7 @@ function App() {
         <ScrollToTop />
         <Particle />
         <Image />
-        <TitleSpons/>
+        <TitleSpons />
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -59,8 +59,7 @@ function App() {
 
           {/* <Route path="/play" element={<Playc />} /> */}
           <Route path="/play" element={<Play />} />
-          
-          
+          <Route path="/sbtskmkc" element={<Hehe />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
