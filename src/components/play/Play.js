@@ -85,7 +85,8 @@ const Play = () => {
         { headers }
       )
       .then((res) => {
-        navigate("/play")
+        console.log(res.data)
+        navigate("/profile")
       })
       .catch((err) => {
         var msg = "";
