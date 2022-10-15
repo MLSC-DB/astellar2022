@@ -37,4 +37,4 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
       with:
           source: './build/'
-          target: '/home/shourde/hosted-projects/astellar2022' 
+          target: '/home/shourya/hosted-projects/astellar2022' 
