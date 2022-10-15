@@ -7,8 +7,8 @@ import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
 import Register from "./components/auth/Register";
-// import Play from "./components/play/Play";
-import Playc from "./components/play/Playc";
+import Play from "./components/play/Play";
+// import Playc from "./components/play/Playc";
 import TitleSpons from "./components/TitleSpons";
 
 import {
@@ -57,8 +57,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
 
-          <Route path="/play" element={<Playc />} />
-          {/* <Route path="/play" element={<Play />} /> */}
+          {/* <Route path="/play" element={<Playc />} /> */}
+          <Route path="/play" element={<Play />} />
           
           
 
