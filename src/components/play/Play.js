@@ -96,7 +96,7 @@ const Play = () => {
         });
         setTimeout(function () {
           window.location.reload();
-        }, 3000);
+        }, 500);
       })
       .catch((err) => {
         var msg = "";
