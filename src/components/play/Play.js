@@ -94,7 +94,9 @@ const Play = () => {
           draggable: true,
           progress: undefined,
         });
-        navigate("/play")
+        setTimeout(function () {
+          window.location.reload();
+        }, 3000);
       })
       .catch((err) => {
         var msg = "";
