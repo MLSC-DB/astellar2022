@@ -6,7 +6,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
-import setAuthToken from "../../utils/setAuthToken"
 
 export default function Login() {
   const navigate = useNavigate();
@@ -47,7 +46,7 @@ export default function Login() {
     const payload = JSON.stringify(Object.fromEntries(data.entries()));
     const myObj = JSON.parse(payload);
     axios
-      .post("http://localhost:3001/api/user/signin/", {
+      .post("/api/user/signin/", {
         teamname: myObj.teamname,
 
         password: myObj.password,

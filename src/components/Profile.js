@@ -11,7 +11,7 @@ const Profile = () => {
   const [loading, setLoading] = React.useState(false);
 
   const populateProfile = useCallback(async () => {
-    const res = await axios.get("http://localhost:3001/api/user/getDetails", {
+    const res = await axios.get("/api/user/getDetails", {
       headers: {
         "astellar-headers": localStorage.getItem("jwt"),
       },
@@ -27,7 +27,6 @@ const Profile = () => {
       success: true,
       data: {
         u1: res.data["u1"].toUpperCase(),
-        points: res.data["points"],
         atLevel: res.data["atlevel"],
         teamName: res.data["teamname"].toUpperCase(),
       },
@@ -113,27 +112,10 @@ const Profile = () => {
                   {data.u1}
                 </span>
               </span>
-
               <span style={{ padding: "2rem 0 2rem 0" }}>
                 <span className="purple" style={{ fontSize: "1.1rem" }}>
                   {" "}
-                  POINTS :{" "}
-                </span>
-                <span
-                  style={{
-                    fontSize: "1.1rem",
-                    color: "white",
-                    fontWeight: "600",
-                    paddingLeft: "7rem",
-                  }}
-                >
-                  {data.points}
-                </span>
-              </span>
-              <span style={{ padding: "2rem 0 2rem 0" }}>
-                <span className="purple" style={{ fontSize: "1.1rem" }}>
-                  {" "}
-                  QUESTIONS SOLVED :{" "}
+                  CURRENT LEVEL :{" "}
                 </span>
                 <span
                   style={{
@@ -143,7 +125,7 @@ const Profile = () => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  {data.atLevel} /35
+                  {data.atLevel}
                 </span>
               </span>
             </div>

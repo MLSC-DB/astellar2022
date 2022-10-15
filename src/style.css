@@ -1120,7 +1120,7 @@ body {
   z-index: 10;
 }
 
-.spanboard{
+.spanboard {
   display: grid;
   grid-template-columns: 0.5fr 6fr 0.5fr;
   color: #be50f4;
@@ -1151,17 +1151,18 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .spanboard{
-    
+  .spanboard {
+
     grid-template-columns: 0.25fr 1.5fr 0.75fr !important;
     font-size: 0.75rem;
     padding-bottom: 1rem;
   }
+
   .team {
     grid-template-columns: 0.25fr 1.5fr 0.25fr !important;
 
   }
-  
+
   .team .pos,
   .team .points,
   .team .team-stat {
@@ -1169,7 +1170,8 @@ body {
     box-shadow: 0;
     background-color: rgba(255, 255, 255, .2);
   }
-  .team .points{
+
+  .team .points {
     margin-right: 1rem;
     padding: 1rem 1rem;
   }
@@ -1177,4 +1179,14 @@ body {
   .team .team-stat {
     margin: 0 2rem 0 2rem;
   }
+}
+
+.form-gallery a,
+.form-gallery a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, .2);
+  padding: 0.4rem;
+  font-family: 'Poppins';
+
 }

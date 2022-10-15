@@ -6,7 +6,8 @@ import About from "./components/about/About";
 import Footer from "./components/Footer";
 import Particle from "./components/Particle";
 import Image from "./Image";
-import Register from "./components/auth/Register";
+// import Register from "./components/auth/Register";
+// import Play from "./components/play/Play";
 import Playc from "./components/play/Playc";
 import TitleSpons from "./components/TitleSpons";
 
@@ -23,8 +24,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/auth/Login";
 import Profile from "./components/Profile";
-import Admin from "./components/Admin";
-import Level from "./components/play/Level";
+// import Admin from "./components/Admin";
 import Leaderboard from "./components/Leaderboard";
 
 function App() {
@@ -52,13 +52,14 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/about" element={<About />} />
-          <Route path="/register" element={<Register />} />
+          {/* <Route path="/register" element={<Register />} /> */}
           <Route path="/leaderboard" element={<Leaderboard />} />
-          {/* <Route path="/login" element={<Login />} /> */}
-          {/* <Route path="/profile" element={<Profile />} /> */}
-
+          <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
 
           <Route path="/play" element={<Playc />} />
+          {/* <Route path="/play" element={<Play />} /> */}
+          
           
 
           <Route path="*" element={<Navigate to="/" />} />
