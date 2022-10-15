@@ -77,7 +77,7 @@ const Play = () => {
     };
     axios
       .post(
-        "http://localhost:3001/api/answer",
+        "/api/answer",
         {
           answer: message,
         },
@@ -86,7 +86,7 @@ const Play = () => {
       )
       .then((res) => {
         console.log(res.data)
-        navigate("/profile")
+        navigate("/play")
       })
       .catch((err) => {
         var msg = "";
