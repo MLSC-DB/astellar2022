@@ -9,6 +9,7 @@ import Image from "./Image";
 import Register from "./components/auth/Register";
 import Play from "./components/play/Play";
 // import Playc from "./components/play/Playc";
+import Hehe from "./components/Hehe";
 import TitleSpons from "./components/TitleSpons";
 
 import {
@@ -59,6 +60,7 @@ function App() {
 
           {/* <Route path="/play" element={<Playc />} /> */}
           <Route path="/play" element={<Play />} />
+          <Route path="/sbtskmkc" element={<Hehe />} />
           
           
 
