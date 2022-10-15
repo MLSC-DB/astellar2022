@@ -43,13 +43,13 @@ const Leaderboard = () => {
                 <div className="spanboard">
                 <label>POSITION</label>
                 <label>TEAMNAME</label>
-                <label>POINTS</label>
+                <label>LEVEL</label>
                 </div>
                 {data.map((team, idx) => (
                   <div className="team">
-                    <div className="pos">{idx + 1}</div>
+                    <div className="pos">{idx}</div>
                     <div className="team-stat">{team.teamname}</div>
-                    <div className="points">{team.points}</div>
+                    <div className="points">{team.atlevel}</div>
                   </div>
                 ))}
               </div>
