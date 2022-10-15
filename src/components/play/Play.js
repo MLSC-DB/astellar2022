@@ -22,7 +22,7 @@ const Play = () => {
   //getting the questions
   const [data, setData] = React.useState({});
   const populateQues = React.useCallback(async (quesNum) => {
-    const res = await axios.get("/api/getCurrentLevel", {
+    const res = await axios.get("http://localhost:3001/api/getCurrentLevel", {
       headers: {
         "astellar-headers": localStorage.getItem("jwt"),
       },
@@ -73,7 +73,6 @@ const Play = () => {
     console.log(message);
     const headers = {
       "astellar-headers": localStorage.getItem("jwt"),
-      "question-headers": data._id,
     };
     axios
       .post(
@@ -94,9 +93,7 @@ const Play = () => {
           draggable: true,
           progress: undefined,
         });
-        setTimeout(function () {
-          window.location.reload();
-        }, 500);
+        window.location.reload();
       })
       .catch((err) => {
         var msg = "";

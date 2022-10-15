@@ -48,7 +48,6 @@ export default function Login() {
     axios
       .post("/api/user/signin/", {
         teamname: myObj.teamname,
-
         password: myObj.password,
       })
       .then((result) => {
