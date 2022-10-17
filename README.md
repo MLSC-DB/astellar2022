@@ -76,3 +76,31 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 In `DNS` Section of Cloudflare, create an A record to root of site pointing to IPv4 address of the VM's IP.
+
+
+# After creation of backend
+## Configure nginx to serve content for static and redirect to /api/ for backend
+
+Create a file `astellar` in `/etc/nginx/sites-available`  
+
+Copy the following contents and paste in it  
+
+```nginx
+server {
+    listen 80;
+    server_name astellar.xyz;
+    location / {
+        proxy_pass http://localhost:7000;
+    }
+    location /api/{
+    	proxy_pass http://localhost:3001;
+  }
+}
+```
+We need to enable the site in nginx so execute the following commands
+```bash
+sudo ln -s /etc/nginx/sites-available/astellar /etc/nginx/sites-enabled
+sudo nginx -t
+sudo systemctl restart nginx
+```
+In `DNS` Section of Cloudflare, create an A record to root of site pointing to IPv4 address of the VM's IP.
